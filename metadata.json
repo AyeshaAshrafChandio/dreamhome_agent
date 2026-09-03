@@ -1,0 +1,6 @@
+{
+  "name": "DreamHome Agent",
+  "description": "Tell us where, what you can afford, and how you want to live — your agent finds the best options.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,3318 @@
+{
+  "users": [
+    {
+      "id": "user_default_buyer",
+      "email": "buyer@dreamhome.agent",
+      "name": "Sarah Jenkins",
+      "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
+      "createdAt": "2026-09-01T10:00:00.000Z"
+    }
+  ],
+  "userPreferences": [
+    {
+      "id": "pref_1",
+      "userId": "user_default_buyer",
+      "budget": 750000,
+      "location": "Austin, TX",
+      "bedrooms": 3,
+      "propertyType": "single_family",
+      "featuresJson": "[\"parking\",\"garden\",\"home_office\"]",
+      "updatedAt": "2026-09-01T10:00:00.000Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": "austin_prop_1",
+      "title": "Modern Craftsman on West Avenue",
+      "description": "Exquisitely renovated single-family home featuring an open-concept living area, custom walnut cabinetry, private fenced backyard with heritage oaks, and dedicated EV charging garage.",
+      "price": 685000,
+      "currency": "$",
+      "location": {
+        "address": "1204 West Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701",
+        "country": "US",
+        "lat": 30.2764,
+        "lng": -97.7478,
+        "neighborhood": "Downtown / West End"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "areaSqFt": 2150,
+      "propertyType": "single_family",
+      "architecturalStyle": "Modern Craftsman",
+      "floors": 2,
+      "yearBuilt": 2019,
+      "features": [
+        "parking",
+        "garden",
+        "home_office",
+        "solar_panels",
+        "central_heating"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "source": {
+        "providerName": "Austin MLS Direct",
+        "listingId": "MLS-TX-849201",
+        "sourceUrl": "https://austinmls.example/listing/849201",
+        "lastUpdated": "2026-09-01T08:00:00.000Z"
+      },
+      "seller": {
+        "name": "David Sterling",
+        "type": "agent",
+        "phone": "+1-512-555-0149",
+        "email": "dsterling@austinbrokerage.com",
+        "company": "Sterling & Associates Real Estate"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.2764,
+          "lng": -97.7478,
+          "address": "1204 West Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 20,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 99,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 100,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $685,000, well within your $750,000 limit (saving $65,000).",
+          "Direct match for your preferred area in Downtown / West End.",
+          "3 bedrooms satisfies your minimum requirement of 3.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "austin_prop_2",
+      "title": "Sunlit Urban Townhouse in West Campus",
+      "description": "Architect-designed 3-story contemporary residence with floor-to-ceiling windows, private rooftop terrace with skyline views, dual primary suites, and attached 2-car garage.",
+      "price": 625000,
+      "currency": "$",
+      "location": {
+        "address": "2408 Leon St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78705",
+        "country": "US",
+        "lat": 30.2889,
+        "lng": -97.7461,
+        "neighborhood": "West Campus"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "areaSqFt": 1980,
+      "propertyType": "townhouse",
+      "architecturalStyle": "Contemporary Urban",
+      "floors": 3,
+      "yearBuilt": 2021,
+      "features": [
+        "parking",
+        "balcony",
+        "home_office",
+        "pet_friendly",
+        "rooftop_deck"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "source": {
+        "providerName": "Austin MLS Direct",
+        "listingId": "MLS-TX-910243",
+        "sourceUrl": "https://austinmls.example/listing/910243",
+        "lastUpdated": "2026-09-02T11:30:00.000Z"
+      },
+      "seller": {
+        "name": "Elena Rostova",
+        "type": "agent",
+        "phone": "+1-512-555-0182",
+        "email": "elena@urbanlivingaustin.com",
+        "company": "Urban Living Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.2889,
+          "lng": -97.7461,
+          "address": "2408 Leon St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 20,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 99,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 100,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $625,000, well within your $750,000 limit (saving $125,000).",
+          "Direct match for your preferred area in West Campus.",
+          "3 bedrooms satisfies your minimum requirement of 3.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "austin_prop_3",
+      "title": "Mueller Green Community Contemporary",
+      "description": "Five-star energy rated modern home in the planned Mueller neighborhood. Steps from Lake Park, Texas Farmers' Market, and Dell Children's Medical Center. Low HOA and community pool.",
+      "price": 720000,
+      "currency": "$",
+      "location": {
+        "address": "4800 Mueller Blvd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78723",
+        "country": "US",
+        "lat": 30.3012,
+        "lng": -97.7051,
+        "neighborhood": "Mueller"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 2450,
+      "propertyType": "single_family",
+      "architecturalStyle": "Modern Prairie",
+      "floors": 2,
+      "yearBuilt": 2020,
+      "features": [
+        "parking",
+        "garden",
+        "pool",
+        "home_office",
+        "pet_friendly"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "source": {
+        "providerName": "Austin MLS Direct",
+        "listingId": "MLS-TX-773412",
+        "sourceUrl": "https://austinmls.example/listing/773412",
+        "lastUpdated": "2026-09-02T15:00:00.000Z"
+      },
+      "seller": {
+        "name": "Marcus Vance",
+        "type": "broker",
+        "phone": "+1-512-555-0199",
+        "email": "mvance@muellerrealty.com",
+        "company": "Vance Premier Properties"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.3012,
+          "lng": -97.7051,
+          "address": "4800 Mueller Blvd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 20,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 99,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 100,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $720,000, well within your $750,000 limit (saving $30,000).",
+          "Direct match for your preferred area in Mueller.",
+          "4 bedrooms satisfies your minimum requirement of 3.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "austin_prop_4",
+      "title": "East Austin Designer Loft & Garden House",
+      "description": "Vibrant East Austin standalone residence boasting polished concrete floors, steel-framed accordion patio doors, xeriscaped native garden, and sound-dampened studio workspace.",
+      "price": 595000,
+      "currency": "$",
+      "location": {
+        "address": "1104 E 6th St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78702",
+        "country": "US",
+        "lat": 30.2642,
+        "lng": -97.7314,
+        "neighborhood": "East Austin"
+      },
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "areaSqFt": 1650,
+      "propertyType": "single_family",
+      "architecturalStyle": "Industrial Modern",
+      "floors": 2,
+      "yearBuilt": 2018,
+      "features": [
+        "parking",
+        "garden",
+        "balcony",
+        "home_office"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "source": {
+        "providerName": "Austin MLS Direct",
+        "listingId": "MLS-TX-612984",
+        "sourceUrl": "https://austinmls.example/listing/612984",
+        "lastUpdated": "2026-09-01T12:00:00.000Z"
+      },
+      "seller": {
+        "name": "Chloe Chen",
+        "type": "agent",
+        "phone": "+1-512-555-0112",
+        "email": "chloe@eastaustinliving.com",
+        "company": "Eastside Real Estate Collective"
+      }
+    },
+    {
+      "id": "austin_prop_5",
+      "title": "Barton Springs Retreat with Pool",
+      "description": "Exceptional property nestled near Zilker Park and Barton Springs. Features a private heated plunge pool, wraparound cedar deck, cedar elm canopy, and bespoke chef's kitchen.",
+      "price": 890000,
+      "currency": "$",
+      "location": {
+        "address": "2200 Barton Springs Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78704",
+        "country": "US",
+        "lat": 30.2638,
+        "lng": -97.7712,
+        "neighborhood": "Zilker / Barton Hills"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 2850,
+      "propertyType": "single_family",
+      "architecturalStyle": "Mid-Century Modern",
+      "floors": 2,
+      "yearBuilt": 2022,
+      "features": [
+        "parking",
+        "garden",
+        "pool",
+        "balcony",
+        "home_office",
+        "pet_friendly"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+      ],
+      "source": {
+        "providerName": "Austin MLS Direct",
+        "listingId": "MLS-TX-551029",
+        "sourceUrl": "https://austinmls.example/listing/551029",
+        "lastUpdated": "2026-09-02T18:00:00.000Z"
+      },
+      "seller": {
+        "name": "Robert Callahan",
+        "type": "broker",
+        "phone": "+1-512-555-0177",
+        "email": "rcallahan@zilkerluxury.com",
+        "company": "Callahan Luxury Group"
+      }
+    },
+    {
+      "id": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+      "title": "11248 Tom Sassman Rd, Austin, TX 78747",
+      "description": "Real estate listing located at 11248 Tom Sassman Rd, Austin, TX 78747. Features 3 bedrooms, 2 bathrooms, and 2,128 sq ft of living space. MLS ID: 1051969.",
+      "price": 1850000,
+      "currency": "$",
+      "location": {
+        "address": "11248 Tom Sassman Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78747",
+        "country": "US",
+        "lat": 30.088173,
+        "lng": -97.702471,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "areaSqFt": 2128,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1996,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1051969",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.446Z"
+      },
+      "seller": {
+        "name": "Gary Steele",
+        "type": "agent",
+        "phone": "5124269800",
+        "email": "gary@steeleactionteam.com",
+        "company": "Keller Williams Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.088173,
+          "lng": -97.702471,
+          "address": "11248 Tom Sassman Rd"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Creedmoor Elementary School",
+            "distanceKm": 1.72,
+            "lat": 30.0914589,
+            "lng": -97.7199575,
+            "type": "School"
+          }
+        ],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [
+          {
+            "name": "Creedmoor City Park",
+            "distanceKm": 2.92,
+            "lat": 30.0867758,
+            "lng": -97.7328003,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 1 school(s), 0 grocery store(s), 0 transit station(s), and 1 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "1316-E-Applegate-Dr,-Austin,-TX-78753",
+      "title": "1316 E Applegate Dr, Austin, TX 78753",
+      "description": "Real estate listing located at 1316 E Applegate Dr, Austin, TX 78753. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 3805322.",
+      "price": 160000,
+      "currency": "$",
+      "location": {
+        "address": "1316 E Applegate Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78753",
+        "country": "US",
+        "lat": 30.363358,
+        "lng": -97.670532,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3805322",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.442Z"
+      },
+      "seller": {
+        "name": "Roxanne Kahn Peasley",
+        "type": "agent",
+        "phone": "5129948254",
+        "email": "roxanne@austinrealestate.com",
+        "company": "AustinRealEstate.com"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.363358,
+          "lng": -97.670532,
+          "address": "1316 E Applegate Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Graham Elementary School",
+            "distanceKm": 0.97,
+            "lat": 30.3719784,
+            "lng": -97.6691075,
+            "type": "School"
+          },
+          {
+            "name": "IDEA Rundberg",
+            "distanceKm": 1.72,
+            "lat": 30.3615275,
+            "lng": -97.6883196,
+            "type": "School"
+          },
+          {
+            "name": "Guerrero Thompson Elementary School",
+            "distanceKm": 2.02,
+            "lat": 30.3634581,
+            "lng": -97.6915736,
+            "type": "School"
+          },
+          {
+            "name": "Walnut Creek Elementary School",
+            "distanceKm": 2.19,
+            "lat": 30.3792317,
+            "lng": -97.6841091,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Cross Creek Hospital",
+            "distanceKm": 2.84,
+            "lat": 30.3384692,
+            "lng": -97.6773614,
+            "type": "Hospital"
+          },
+          {
+            "name": "Park Bend Drive",
+            "distanceKm": 6.12,
+            "lat": 30.410421,
+            "lng": -97.7035475,
+            "type": "Hospital"
+          },
+          {
+            "name": "Saint David's North Austin Medical Center",
+            "distanceKm": 6.39,
+            "lat": 30.4117954,
+            "lng": -97.7063644,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "Supermercado Mexicano",
+            "distanceKm": 2.17,
+            "lat": 30.3704247,
+            "lng": -97.6916612,
+            "type": "Supermarket"
+          },
+          {
+            "name": "MT Supermarket",
+            "distanceKm": 2.2,
+            "lat": 30.3779988,
+            "lng": -97.6859357,
+            "type": "Supermarket"
+          },
+          {
+            "name": "La Hacienda Market",
+            "distanceKm": 2.33,
+            "lat": 30.3701266,
+            "lng": -97.6935646,
+            "type": "Supermarket"
+          },
+          {
+            "name": "International Foods",
+            "distanceKm": 2.53,
+            "lat": 30.3823572,
+            "lng": -97.6850422,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [
+          {
+            "name": "McKalla",
+            "distanceKm": 5.28,
+            "lat": 30.3878362,
+            "lng": -97.7176436,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Crestview",
+            "distanceKm": 5.46,
+            "lat": 30.3384546,
+            "lng": -97.7196205,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Kramer",
+            "distanceKm": 5.48,
+            "lat": 30.3927967,
+            "lng": -97.7164036,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Highland",
+            "distanceKm": 5.84,
+            "lat": 30.3285886,
+            "lng": -97.7161735,
+            "type": "Transit Station"
+          }
+        ],
+        "parks": [
+          {
+            "name": "Sprinkle Corner",
+            "distanceKm": 0.46,
+            "lat": 30.3594824,
+            "lng": -97.6687619,
+            "type": "Park"
+          },
+          {
+            "name": "Austin",
+            "distanceKm": 0.73,
+            "lat": 30.3580822,
+            "lng": -97.6660591,
+            "type": "Park"
+          },
+          {
+            "name": "Chinese Church Park",
+            "distanceKm": 0.93,
+            "lat": 30.3713145,
+            "lng": -97.6675243,
+            "type": "Park"
+          },
+          {
+            "name": "Brownie Neighborhood Park",
+            "distanceKm": 1.56,
+            "lat": 30.3637941,
+            "lng": -97.6868257,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 98,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 4 grocery store(s), 4 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "2646-Crazyhorse-Pass,-Austin,-TX-78734",
+      "title": "2646 Crazyhorse Pass, Austin, TX 78734",
+      "description": "Real estate listing located at 2646 Crazyhorse Pass, Austin, TX 78734. Features 3 bedrooms, 2.5 bathrooms, and 2,234 sq ft of living space. MLS ID: 1131379.",
+      "price": 739900,
+      "currency": "$",
+      "location": {
+        "address": "2646 Crazyhorse Pass",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78734",
+        "country": "US",
+        "lat": 30.379389,
+        "lng": -97.926453,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "areaSqFt": 2234,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2025,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1131379",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.437Z"
+      },
+      "seller": {
+        "name": "Joe Jarusinsky",
+        "type": "agent",
+        "phone": "5124970105",
+        "email": "joejarusinsky@sbcglobal.net",
+        "company": "Keller Williams - Lake Travis"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.379389,
+          "lng": -97.926453,
+          "address": "2646 Crazyhorse Pass"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Hudson Bend Middle School",
+            "distanceKm": 1.38,
+            "lat": 30.3898631,
+            "lng": -97.9340792,
+            "type": "School"
+          },
+          {
+            "name": "Lake Travis Elementary School",
+            "distanceKm": 2.15,
+            "lat": 30.370254,
+            "lng": -97.9461904,
+            "type": "School"
+          },
+          {
+            "name": "Canyon Ridge Middle School",
+            "distanceKm": 2.8,
+            "lat": 30.3644746,
+            "lng": -97.9029526,
+            "type": "School"
+          },
+          {
+            "name": "Laura Welch Bush Elementary School",
+            "distanceKm": 2.9,
+            "lat": 30.3662559,
+            "lng": -97.9003354,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Family Hospital at Lake Travis",
+            "distanceKm": 4.18,
+            "lat": 30.3912121,
+            "lng": -97.8851101,
+            "type": "Hospital"
+          },
+          {
+            "name": "Complete Care - Lakeway",
+            "distanceKm": 5.21,
+            "lat": 30.3471374,
+            "lng": -97.9658765,
+            "type": "Hospital"
+          },
+          {
+            "name": "Baylor Scott And White Medical Center - Lakeway",
+            "distanceKm": 6.73,
+            "lat": 30.3330267,
+            "lng": -97.9716131,
+            "type": "Hospital"
+          },
+          {
+            "name": "Wild Cherry Drive",
+            "distanceKm": 6.81,
+            "lat": 30.3325453,
+            "lng": -97.9721411,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "Randalls",
+            "distanceKm": 4.23,
+            "lat": 30.3891589,
+            "lng": -97.8838493,
+            "type": "Supermarket"
+          },
+          {
+            "name": "H-E-B",
+            "distanceKm": 5.56,
+            "lat": 30.3447625,
+            "lng": -97.9682695,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [],
+        "parks": [
+          {
+            "name": "Travis County",
+            "distanceKm": 0.75,
+            "lat": 30.3859448,
+            "lng": -97.9280889,
+            "type": "Park"
+          },
+          {
+            "name": "Geronimo Park",
+            "distanceKm": 0.75,
+            "lat": 30.3780996,
+            "lng": -97.9187629,
+            "type": "Park"
+          },
+          {
+            "name": "Fritz Hughes Park",
+            "distanceKm": 1.38,
+            "lat": 30.3827065,
+            "lng": -97.9126292,
+            "type": "Park"
+          },
+          {
+            "name": "Jessica Hollis Park",
+            "distanceKm": 1.8,
+            "lat": 30.3866229,
+            "lng": -97.9096357,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 75,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 2 grocery store(s), 0 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "1401-Mooreland-Dr,-Austin,-TX-78748",
+      "title": "1401 Mooreland Dr, Austin, TX 78748",
+      "description": "Real estate listing located at 1401 Mooreland Dr, Austin, TX 78748. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 3587552.",
+      "price": 799999,
+      "currency": "$",
+      "location": {
+        "address": "1401 Mooreland Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78748",
+        "country": "US",
+        "lat": 30.149826,
+        "lng": -97.832558,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3587552",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.435Z"
+      },
+      "seller": {
+        "name": "Candace Fernandez",
+        "type": "agent",
+        "phone": "5126941480",
+        "email": "candaceyourrealtor@gmail.com",
+        "company": "Coffman Real Estate"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.149826,
+          "lng": -97.832558,
+          "address": "1401 Mooreland Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Jackie's Private Education",
+            "distanceKm": 0.29,
+            "lat": 30.1522738,
+            "lng": -97.8337016,
+            "type": "School"
+          },
+          {
+            "name": "Austin Preparatory Academy",
+            "distanceKm": 0.36,
+            "lat": 30.1523312,
+            "lng": -97.8348755,
+            "type": "School"
+          },
+          {
+            "name": "Briarwood Elementary School",
+            "distanceKm": 1301.31,
+            "lat": 36.973776,
+            "lng": -86.401426,
+            "type": "School"
+          },
+          {
+            "name": "Cranmore Integrated Primary School",
+            "distanceKm": 7433.9,
+            "lat": 54.5671775,
+            "lng": -5.9833081,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "The Medical Center at Bowling Green",
+            "distanceKm": 1300.53,
+            "lat": 36.9957692,
+            "lng": -86.4292904,
+            "type": "Hospital"
+          },
+          {
+            "name": "Rivendell Behavioral Health",
+            "distanceKm": 1304.05,
+            "lat": 36.9966876,
+            "lng": -86.3830357,
+            "type": "Hospital"
+          },
+          {
+            "name": "Kentucky Children's Richmond Road",
+            "distanceKm": 1507.36,
+            "lat": 38.0222516,
+            "lng": -84.4728647,
+            "type": "Hospital"
+          },
+          {
+            "name": "Musgrave Park Hospital",
+            "distanceKm": 7434.06,
+            "lat": 54.5688424,
+            "lng": -5.9797374,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "IGA",
+            "distanceKm": 1302.12,
+            "lat": 36.9803171,
+            "lng": -86.3958266,
+            "type": "Supermarket"
+          },
+          {
+            "name": "Lidl",
+            "distanceKm": 7433.74,
+            "lat": 54.5786695,
+            "lng": -5.9787455,
+            "type": "Supermarket"
+          },
+          {
+            "name": "The Food Warehouse",
+            "distanceKm": 7433.86,
+            "lat": 54.5775757,
+            "lng": -5.9775541,
+            "type": "Supermarket"
+          },
+          {
+            "name": "Asda",
+            "distanceKm": 7433.87,
+            "lat": 54.5778468,
+            "lng": -5.9772413,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [
+          {
+            "name": "Dunmurry",
+            "distanceKm": 7433.23,
+            "lat": 54.5531263,
+            "lng": -6.0032081,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Finaghy",
+            "distanceKm": 7433.87,
+            "lat": 54.5640406,
+            "lng": -5.9858241,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Balmoral",
+            "distanceKm": 7434.74,
+            "lat": 54.5686302,
+            "lng": -5.9685874,
+            "type": "Transit Station"
+          },
+          {
+            "name": "Adelaide",
+            "distanceKm": 7435.19,
+            "lat": 54.5784108,
+            "lng": -5.9550177,
+            "type": "Transit Station"
+          }
+        ],
+        "parks": [
+          {
+            "name": "Manchaca Community Park",
+            "distanceKm": 0.53,
+            "lat": 30.1459983,
+            "lng": -97.8293487,
+            "type": "Park"
+          },
+          {
+            "name": "Manchaca",
+            "distanceKm": 0.64,
+            "lat": 30.1445021,
+            "lng": -97.8300138,
+            "type": "Park"
+          },
+          {
+            "name": "Canturbury Trails Park",
+            "distanceKm": 0.84,
+            "lat": 30.1555117,
+            "lng": -97.8267998,
+            "type": "Park"
+          },
+          {
+            "name": "Lovers Lane Soccer Complex",
+            "distanceKm": 1300.9,
+            "lat": 36.9727898,
+            "lng": -86.4060626,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 98,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 4 grocery store(s), 4 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "2305-Barton-Creek-Blvd,-Unit-29,-Austin,-TX-78735",
+      "title": "2305 Barton Creek Blvd, Unit 29, Austin, TX 78735",
+      "description": "Real estate listing located at 2305 Barton Creek Blvd, Unit 29, Austin, TX 78735. Features 4 bedrooms, 3.5 bathrooms, and 3,769 sq ft of living space. MLS ID: 555032.",
+      "price": 2349000,
+      "currency": "$",
+      "location": {
+        "address": "2305 Barton Creek Blvd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78735",
+        "country": "US",
+        "lat": 30.289722,
+        "lng": -97.861903,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 3769,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 1998,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (CentralTexas)",
+        "listingId": "555032",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.424Z"
+      },
+      "seller": {
+        "name": "Thomas Johnston",
+        "type": "agent",
+        "phone": "4329343333",
+        "email": "txtommyboy20@aol.com",
+        "company": "THE REAL ESTATE RANCH"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.289722,
+          "lng": -97.861903,
+          "address": "2305 Barton Creek Blvd"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Arbor Creek Middle School",
+            "distanceKm": 319.32,
+            "lat": 33.0354088,
+            "lng": -96.8730833,
+            "type": "School"
+          },
+          {
+            "name": "East Hebron Parkway",
+            "distanceKm": 319.36,
+            "lat": 33.0298152,
+            "lng": -96.850642,
+            "type": "School"
+          },
+          {
+            "name": "Hebron High School",
+            "distanceKm": 319.6,
+            "lat": 33.0342864,
+            "lng": -96.8589338,
+            "type": "School"
+          },
+          {
+            "name": "Memorial Elementary School",
+            "distanceKm": 321.31,
+            "lat": 33.0575956,
+            "lng": -96.8866326,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Texas Surgical Hospital",
+            "distanceKm": 319.46,
+            "lat": 33.0316486,
+            "lng": -96.8540529,
+            "type": "Hospital"
+          },
+          {
+            "name": "Plano Parkway",
+            "distanceKm": 319.9,
+            "lat": 33.0395183,
+            "lng": -96.8678973,
+            "type": "Hospital"
+          },
+          {
+            "name": "Carrollton Springs",
+            "distanceKm": 320.65,
+            "lat": 33.0457664,
+            "lng": -96.8647602,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "Kroger",
+            "distanceKm": 321.72,
+            "lat": 33.062099,
+            "lng": -96.8891867,
+            "type": "Supermarket"
+          },
+          {
+            "name": "ALDI",
+            "distanceKm": 321.75,
+            "lat": 33.0614561,
+            "lng": -96.8856328,
+            "type": "Supermarket"
+          },
+          {
+            "name": "Target",
+            "distanceKm": 322.03,
+            "lat": 33.0638791,
+            "lng": -96.8845131,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [],
+        "parks": [
+          {
+            "name": "The Colony",
+            "distanceKm": 321.88,
+            "lat": 33.0541458,
+            "lng": -96.8527609,
+            "type": "Park"
+          },
+          {
+            "name": "The Thicket",
+            "distanceKm": 321.89,
+            "lat": 33.0532062,
+            "lng": -96.8488429,
+            "type": "Park"
+          },
+          {
+            "name": "Andover Park",
+            "distanceKm": 322.18,
+            "lat": 33.0565622,
+            "lng": -96.851235,
+            "type": "Park"
+          },
+          {
+            "name": "Davidson Court",
+            "distanceKm": 322.21,
+            "lat": 33.0564303,
+            "lng": -96.8496816,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 81,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 3 grocery store(s), 0 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "Escarpment-Blvd,-Austin,-TX-78739",
+      "title": "Escarpment Blvd, Austin, TX 78739",
+      "description": "Real estate listing located at Escarpment Blvd, Austin, TX 78739. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 8625097.",
+      "price": 649000,
+      "currency": "$",
+      "location": {
+        "address": "Escarpment Blvd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78739",
+        "country": "US",
+        "lat": 30.176776,
+        "lng": -97.906893,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "8625097",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.422Z"
+      },
+      "seller": {
+        "name": "Alexander Croft",
+        "type": "agent",
+        "phone": "5124198781",
+        "email": "alex@teamprice.com",
+        "company": "Compass RE Texas LLC - Austin"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.176776,
+          "lng": -97.906893,
+          "address": "Escarpment Blvd"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Gorzycki Middle School",
+            "distanceKm": 4.46,
+            "lat": 30.2145807,
+            "lng": -97.8914082,
+            "type": "School"
+          },
+          {
+            "name": "Mills Elementary School",
+            "distanceKm": 4.66,
+            "lat": 30.2104678,
+            "lng": -97.8781425,
+            "type": "School"
+          },
+          {
+            "name": "Oak Hill Elementary School",
+            "distanceKm": 8.26,
+            "lat": 30.237623,
+            "lng": -97.8575509,
+            "type": "School"
+          },
+          {
+            "name": "Patton Elementary School",
+            "distanceKm": 8.64,
+            "lat": 30.2325638,
+            "lng": -97.844378,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Seton Southwest Hospital",
+            "distanceKm": 5.65,
+            "lat": 30.2260928,
+            "lng": -97.8926376,
+            "type": "Hospital"
+          },
+          {
+            "name": "Baylor Scott & White Medical Center - Austin",
+            "distanceKm": 9.47,
+            "lat": 30.2348059,
+            "lng": -97.8347895,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "H-E-B",
+            "distanceKm": 5.87,
+            "lat": 30.2269051,
+            "lng": -97.8876114,
+            "type": "Supermarket"
+          },
+          {
+            "name": "Whole Foods Market",
+            "distanceKm": 7.92,
+            "lat": 30.2201874,
+            "lng": -97.8415946,
+            "type": "Supermarket"
+          },
+          {
+            "name": "Halal Stop Shop",
+            "distanceKm": 8.38,
+            "lat": 30.2236613,
+            "lng": -97.8386302,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [
+          {
+            "name": "Albion Park",
+            "distanceKm": 13669.88,
+            "lat": -34.5629223,
+            "lng": 150.7986248,
+            "type": "Transit Station"
+          }
+        ],
+        "parks": [
+          {
+            "name": "Aden Lane Pocket Park",
+            "distanceKm": 1.35,
+            "lat": 30.1849706,
+            "lng": -97.8964855,
+            "type": "Park"
+          },
+          {
+            "name": "Legend Oaks Neighborhood Park",
+            "distanceKm": 6.03,
+            "lat": 30.2230784,
+            "lng": -97.874138,
+            "type": "Park"
+          },
+          {
+            "name": "Legend Oaks Park",
+            "distanceKm": 6.1,
+            "lat": 30.2214266,
+            "lng": -97.8700038,
+            "type": "Park"
+          },
+          {
+            "name": "Woods of Legend Oaks Private Park",
+            "distanceKm": 7.06,
+            "lat": 30.2299969,
+            "lng": -97.8668864,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 98,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 3 grocery store(s), 1 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "5808-Twin-Peaks-Trce,-Austin,-TX-78738",
+      "title": "5808 Twin Peaks Trce, Austin, TX 78738",
+      "description": "Real estate listing located at 5808 Twin Peaks Trce, Austin, TX 78738. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 3711490.",
+      "price": 499000,
+      "currency": "$",
+      "location": {
+        "address": "5808 Twin Peaks Trce",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.316885,
+        "lng": -98.013588,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3711490",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.423Z"
+      },
+      "seller": {
+        "name": "Katherine Wright",
+        "type": "agent",
+        "phone": "5126956905",
+        "email": "kbw@moreland.com",
+        "company": "MORELAND PROPERTIES"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.316885,
+          "lng": -98.013588,
+          "address": "5808 Twin Peaks Trce"
+        },
+        "radiusMeters": 2000,
+        "schools": [
+          {
+            "name": "Bee Cave Middle School",
+            "distanceKm": 1.46,
+            "lat": 30.310975,
+            "lng": -97.9999923,
+            "type": "School"
+          },
+          {
+            "name": "Lake Travis ISD Transportation Center",
+            "distanceKm": 1.64,
+            "lat": 30.3159186,
+            "lng": -97.9965479,
+            "type": "School"
+          },
+          {
+            "name": "Future LTISD Elementary (#8)",
+            "distanceKm": 2.92,
+            "lat": 30.2929091,
+            "lng": -98.0259413,
+            "type": "School"
+          },
+          {
+            "name": "Lake Travis Middle School",
+            "distanceKm": 2.93,
+            "lat": 30.3379405,
+            "lng": -98.0318623,
+            "type": "School"
+          }
+        ],
+        "hospitals": [
+          {
+            "name": "Medical Parkway",
+            "distanceKm": 4.34,
+            "lat": 30.3325453,
+            "lng": -97.9721411,
+            "type": "Hospital"
+          },
+          {
+            "name": "Baylor Scott And White Medical Center - Lakeway",
+            "distanceKm": 4.41,
+            "lat": 30.3330267,
+            "lng": -97.9716131,
+            "type": "Hospital"
+          },
+          {
+            "name": "Complete Care - Lakeway",
+            "distanceKm": 5.68,
+            "lat": 30.3471374,
+            "lng": -97.9658765,
+            "type": "Hospital"
+          }
+        ],
+        "groceryStores": [
+          {
+            "name": "Randalls",
+            "distanceKm": 5.29,
+            "lat": 30.3412975,
+            "lng": -97.9663321,
+            "type": "Supermarket"
+          },
+          {
+            "name": "H-E-B",
+            "distanceKm": 5.34,
+            "lat": 30.3447625,
+            "lng": -97.9682695,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [],
+        "parks": [
+          {
+            "name": "Travis County",
+            "distanceKm": 1.47,
+            "lat": 30.3276801,
+            "lng": -98.0225116,
+            "type": "Park"
+          },
+          {
+            "name": "La Campana Park",
+            "distanceKm": 1.54,
+            "lat": 30.3277414,
+            "lng": -98.0036748,
+            "type": "Park"
+          },
+          {
+            "name": "Bee Creek Sports Complex",
+            "distanceKm": 3.52,
+            "lat": 30.3442609,
+            "lng": -98.0319201,
+            "type": "Park"
+          },
+          {
+            "name": "The Hills Park",
+            "distanceKm": 3.69,
+            "lat": 30.3465436,
+            "lng": -97.9962687,
+            "type": "Park"
+          }
+        ],
+        "walkabilityScore": 75,
+        "realDataSummary": "Within a 2 km radius: 4 school(s), 2 grocery store(s), 0 transit station(s), and 4 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "1928-Miles-Ave,-Unit-1,-Austin,-TX-78745",
+      "title": "1928 Miles Ave, Unit 1, Austin, TX 78745",
+      "description": "Real estate listing located at 1928 Miles Ave, Unit 1, Austin, TX 78745. Features 3 bedrooms, 2 bathrooms, and 1,344 sq ft of living space. MLS ID: 4050133.",
+      "price": 459000,
+      "currency": "$",
+      "location": {
+        "address": "1928 Miles Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78745",
+        "country": "US",
+        "lat": 30.206619,
+        "lng": -97.804489,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "areaSqFt": 1344,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1961,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "4050133",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.420Z"
+      },
+      "seller": {
+        "name": "Chris Gass",
+        "type": "agent",
+        "phone": "9033126027",
+        "email": "chrisg@twelveriversrealty.com",
+        "company": "Holby Homes, LLC"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.206619,
+          "lng": -97.804489,
+          "address": "1928 Miles Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "4747-Eck-Ln,-Austin,-TX-78734",
+      "title": "4747 Eck Ln, Austin, TX 78734",
+      "description": "Real estate listing located at 4747 Eck Ln, Austin, TX 78734. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 6897566.",
+      "price": 1199000,
+      "currency": "$",
+      "location": {
+        "address": "4747 Eck Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78734",
+        "country": "US",
+        "lat": 30.414103,
+        "lng": -97.935684,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "6897566",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.418Z"
+      },
+      "seller": {
+        "name": "Thom Lemon",
+        "type": "agent",
+        "phone": "5123467355",
+        "email": "thom@austinhomestore.com",
+        "company": "TELCO, REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.414103,
+          "lng": -97.935684,
+          "address": "4747 Eck Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "Old-Lockhart-Rd,-Austin,-TX-78747",
+      "title": "Old Lockhart Rd, Austin, TX 78747",
+      "description": "Real estate listing located at Old Lockhart Rd, Austin, TX 78747. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 9859940.",
+      "price": 2500000,
+      "currency": "$",
+      "location": {
+        "address": "Old Lockhart Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78747",
+        "country": "US",
+        "lat": 30.14048399,
+        "lng": -97.76135634,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "9859940",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.415Z"
+      },
+      "seller": {
+        "name": "Spencer E. Collins",
+        "type": "agent",
+        "phone": "5125367829",
+        "email": "spence@matexas.com",
+        "company": "McAllister And Associates"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.14048399,
+          "lng": -97.76135634,
+          "address": "Old Lockhart Rd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "12609-Dessau-Rd,-Lot-375,-Austin,-TX-78754",
+      "title": "12609 Dessau Rd, Lot 375, Austin, TX 78754",
+      "description": "Real estate listing located at 12609 Dessau Rd, Lot 375, Austin, TX 78754. Features 3 bedrooms, 2 bathrooms, and 1,232 sq ft of living space. MLS ID: 32333.",
+      "price": 105000,
+      "currency": "$",
+      "location": {
+        "address": "12609 Dessau Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78754",
+        "country": "US",
+        "lat": 30.391865,
+        "lng": -97.642536,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "areaSqFt": 1232,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1995,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (SunCommunities)",
+        "listingId": "32333",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.415Z"
+      },
+      "seller": {
+        "name": "Licensed Listing Broker",
+        "type": "agent",
+        "company": "Branch Creek"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.391865,
+          "lng": -97.642536,
+          "address": "12609 Dessau Rd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "407-E-Monroe-St,-Austin,-TX-78704",
+      "title": "407 E Monroe St, Austin, TX 78704",
+      "description": "Real estate listing located at 407 E Monroe St, Austin, TX 78704. Features 1 bedrooms, 1 bathrooms, and 616 sq ft of living space. MLS ID: 3572805.",
+      "price": 855000,
+      "currency": "$",
+      "location": {
+        "address": "407 E Monroe St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78704",
+        "country": "US",
+        "lat": 30.246588,
+        "lng": -97.746868,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "areaSqFt": 616,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3572805",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.414Z"
+      },
+      "seller": {
+        "name": "Clayton Bullock",
+        "type": "agent",
+        "phone": "5127976446",
+        "email": "clayton@moreland.com",
+        "company": "MORELAND PROPERTIES"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.246588,
+          "lng": -97.746868,
+          "address": "407 E Monroe St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "4510-Terry-O-Ln,-Unit-406,-Austin,-TX-78745",
+      "title": "4510 Terry O Ln, Unit 406, Austin, TX 78745",
+      "description": "Real estate listing located at 4510 Terry O Ln, Unit 406, Austin, TX 78745. Features 1 bedrooms, 1 bathrooms, and 752 sq ft of living space. MLS ID: 2403434.",
+      "price": 419900,
+      "currency": "$",
+      "location": {
+        "address": "4510 Terry O Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78745",
+        "country": "US",
+        "lat": 30.21326,
+        "lng": -97.760993,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "areaSqFt": 752,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 2022,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "2403434",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.413Z"
+      },
+      "seller": {
+        "name": "Jody Allen",
+        "type": "agent",
+        "phone": "5127365639",
+        "email": "jody@736jody.com",
+        "company": "All City Real Estate"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.21326,
+          "lng": -97.760993,
+          "address": "4510 Terry O Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "9114-Highway,-290-W,-Austin,-TX-78736",
+      "title": "9114 Highway, 290 W, Austin, TX 78736",
+      "description": "Real estate listing located at 9114 Highway, 290 W, Austin, TX 78736. Features 2 bedrooms, 1 bathrooms, and 1,400 sq ft of living space. MLS ID: 2025238.",
+      "price": 1750000,
+      "currency": "$",
+      "location": {
+        "address": "9114 Highway",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78736",
+        "country": "US",
+        "lat": 30.23246,
+        "lng": -97.927155,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "areaSqFt": 1400,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1985,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "2025238",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.412Z"
+      },
+      "seller": {
+        "name": "Lisa Jacobson",
+        "type": "agent",
+        "phone": "5126510077",
+        "email": "lisamjacobson4@gmail.com",
+        "company": "Response Realty Advisors, Llc"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.23246,
+          "lng": -97.927155,
+          "address": "9114 Highway"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "110-W-Saint-Johns-Ave,-Austin,-TX-78752",
+      "title": "110 W Saint Johns Ave, Austin, TX 78752",
+      "description": "Real estate listing located at 110 W Saint Johns Ave, Austin, TX 78752. Features 5 bedrooms, 2 bathrooms, and 1,780 sq ft of living space. MLS ID: 6884614.",
+      "price": 599900,
+      "currency": "$",
+      "location": {
+        "address": "110 W Saint Johns Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78752",
+        "country": "US",
+        "lat": 30.336393,
+        "lng": -97.71087,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "areaSqFt": 1780,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1961,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "6884614",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.411Z"
+      },
+      "seller": {
+        "name": "Jeremy Vandermause",
+        "type": "agent",
+        "phone": "5124349998",
+        "email": "jeremy@bramlettresidential.com",
+        "company": "Bramlett Partners"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.336393,
+          "lng": -97.71087,
+          "address": "110 W Saint Johns Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "2510-Geronimo-Trl,-Austin,-TX-78734",
+      "title": "2510 Geronimo Trl, Austin, TX 78734",
+      "description": "Real estate listing located at 2510 Geronimo Trl, Austin, TX 78734. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 8676943.",
+      "price": 99000,
+      "currency": "$",
+      "location": {
+        "address": "2510 Geronimo Trl",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78734",
+        "country": "US",
+        "lat": 30.375718,
+        "lng": -97.917314,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "8676943",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.408Z"
+      },
+      "seller": {
+        "name": "Tanya Kerr",
+        "type": "agent",
+        "phone": "5127485343",
+        "email": "tanya@tkerrrealestate.com",
+        "company": "KWLS - T. Kerr Property Group"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.375718,
+          "lng": -97.917314,
+          "address": "2510 Geronimo Trl"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "9031-Cattle-Baron-Path,-Austin,-TX-78747",
+      "title": "9031 Cattle Baron Path, Austin, TX 78747",
+      "description": "Real estate listing located at 9031 Cattle Baron Path, Austin, TX 78747. Features 3 bedrooms, 3.5 bathrooms, and 2,443 sq ft of living space. MLS ID: 2389151.",
+      "price": 565998,
+      "currency": "$",
+      "location": {
+        "address": "9031 Cattle Baron Path",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78747",
+        "country": "US",
+        "lat": 30.153067,
+        "lng": -97.756889,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "areaSqFt": 2443,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2024,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "2389151",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.406Z"
+      },
+      "seller": {
+        "name": "Lance Loken",
+        "type": "agent",
+        "phone": "7137661000",
+        "email": "customercare@portfoliohouston.com",
+        "company": "Keller Williams Platinum"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.153067,
+          "lng": -97.756889,
+          "address": "9031 Cattle Baron Path"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "9025-Cattle-Baron-Path,-Austin,-TX-78747",
+      "title": "9025 Cattle Baron Path, Austin, TX 78747",
+      "description": "Real estate listing located at 9025 Cattle Baron Path, Austin, TX 78747. Features 3 bedrooms, 3.5 bathrooms, and 2,443 sq ft of living space. MLS ID: 2262456.",
+      "price": 567998,
+      "currency": "$",
+      "location": {
+        "address": "9025 Cattle Baron Path",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78747",
+        "country": "US",
+        "lat": 30.153078,
+        "lng": -97.756645,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "areaSqFt": 2443,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2024,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "2262456",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.405Z"
+      },
+      "seller": {
+        "name": "Lance Loken",
+        "type": "agent",
+        "phone": "7137661000",
+        "email": "customercare@portfoliohouston.com",
+        "company": "Keller Williams Platinum"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.153078,
+          "lng": -97.756645,
+          "address": "9025 Cattle Baron Path"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "9027-Cattle-Baron-Path,-Austin,-TX-78747",
+      "title": "9027 Cattle Baron Path, Austin, TX 78747",
+      "description": "Real estate listing located at 9027 Cattle Baron Path, Austin, TX 78747. Features 3 bedrooms, 3.5 bathrooms, and 2,443 sq ft of living space. MLS ID: 5572993.",
+      "price": 499998,
+      "currency": "$",
+      "location": {
+        "address": "9027 Cattle Baron Path",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78747",
+        "country": "US",
+        "lat": 30.153063,
+        "lng": -97.756721,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "areaSqFt": 2443,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2024,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "5572993",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.404Z"
+      },
+      "seller": {
+        "name": "Lance Loken",
+        "type": "agent",
+        "phone": "7137661000",
+        "email": "customercare@portfoliohouston.com",
+        "company": "Keller Williams Platinum"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.153063,
+          "lng": -97.756721,
+          "address": "9027 Cattle Baron Path"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "7403A-Guadalupe-St,-Austin,-TX-78752",
+      "title": "7403A Guadalupe St, Austin, TX 78752",
+      "description": "Real estate listing located at 7403A Guadalupe St, Austin, TX 78752. Features 0 bedrooms, 0 bathrooms, and N/A sq ft of living space. MLS ID: 8126661.",
+      "price": 499000,
+      "currency": "$",
+      "location": {
+        "address": "7403A Guadalupe St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78752",
+        "country": "US",
+        "lat": 30.339573,
+        "lng": -97.713043,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 0,
+      "bathrooms": 0,
+      "areaSqFt": 0,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "8126661",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.402Z"
+      },
+      "seller": {
+        "name": "Steve Nastri",
+        "type": "agent",
+        "phone": "5129903141",
+        "email": "nasprop@sbcglobal.net",
+        "company": "Austin Castles Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.339573,
+          "lng": -97.713043,
+          "address": "7403A Guadalupe St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "1144-Mason-Ave,-Austin,-TX-78721",
+      "title": "1144 Mason Ave, Austin, TX 78721",
+      "description": "Real estate listing located at 1144 Mason Ave, Austin, TX 78721. Features 3 bedrooms, 1 bathrooms, and 888 sq ft of living space. MLS ID: 4025542.",
+      "price": 649999,
+      "currency": "$",
+      "location": {
+        "address": "1144 Mason Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78721",
+        "country": "US",
+        "lat": 30.275822,
+        "lng": -97.684589,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "areaSqFt": 888,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1940,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "4025542",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.400Z"
+      },
+      "seller": {
+        "name": "Johanna Freire",
+        "type": "agent",
+        "phone": "5129704602",
+        "company": "Fathom Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.275822,
+          "lng": -97.684589,
+          "address": "1144 Mason Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "15000-Maha-Rd,-Austin,-TX-78719",
+      "title": "15000 Maha Rd, Austin, TX 78719",
+      "description": "Real estate listing located at 15000 Maha Rd, Austin, TX 78719. Features 2 bedrooms, 1 bathrooms, and 1,132 sq ft of living space. MLS ID: 5041841.",
+      "price": 1299000,
+      "currency": "$",
+      "location": {
+        "address": "15000 Maha Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78719",
+        "country": "US",
+        "lat": 30.072676,
+        "lng": -97.650816,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "areaSqFt": 1132,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1923,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "5041841",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.400Z"
+      },
+      "seller": {
+        "name": "Elizabeth Schmidtberger",
+        "type": "agent",
+        "phone": "2102699940",
+        "email": "teamschmidtberger@gmail.com",
+        "company": "TS Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.072676,
+          "lng": -97.650816,
+          "address": "15000 Maha Rd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "4324-Far-West-Blvd,-Austin,-TX-78731",
+      "title": "4324 Far West Blvd, Austin, TX 78731",
+      "description": "Real estate listing located at 4324 Far West Blvd, Austin, TX 78731. Features 4 bedrooms, 3 bathrooms, and 3,013 sq ft of living space. MLS ID: 5018763.",
+      "price": 1175000,
+      "currency": "$",
+      "location": {
+        "address": "4324 Far West Blvd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78731",
+        "country": "US",
+        "lat": 30.361068,
+        "lng": -97.773861,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 3013,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1986,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "5018763",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.397Z"
+      },
+      "seller": {
+        "name": "Paul Greenway",
+        "type": "agent",
+        "phone": "5124232200",
+        "email": "pwg.media@lycos.com",
+        "company": "Select Austin Real Estate"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.361068,
+          "lng": -97.773861,
+          "address": "4324 Far West Blvd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "800-Brazos-St,-Unit-705,-Austin,-TX-78701",
+      "title": "800 Brazos St, Unit 705, Austin, TX 78701",
+      "description": "Real estate listing located at 800 Brazos St, Unit 705, Austin, TX 78701. Features 1 bedrooms, 1 bathrooms, and 891 sq ft of living space. MLS ID: 7432237.",
+      "price": 360000,
+      "currency": "$",
+      "location": {
+        "address": "800 Brazos St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78701",
+        "country": "US",
+        "lat": 30.269973,
+        "lng": -97.740841,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "areaSqFt": 891,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 1949,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "7432237",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.396Z"
+      },
+      "seller": {
+        "name": "Tausha Carlson",
+        "type": "agent",
+        "phone": "5126531966",
+        "email": "tausha@taushacarlson.com",
+        "company": "Marathon Real Estate - Tausha"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.269973,
+          "lng": -97.740841,
+          "address": "800 Brazos St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    },
+    {
+      "id": "6507-Bridge-Point-Gardenia-2b-Pkwy,-Unit-Lvs,-Austin,-TX-78730",
+      "title": "6507 Bridge Point Gardenia 2b Pkwy, Unit Lvs, Austin, TX 78730",
+      "description": "Real estate listing located at 6507 Bridge Point Gardenia 2b Pkwy, Unit Lvs, Austin, TX 78730. Features 3 bedrooms, 3.5 bathrooms, and 2,857 sq ft of living space. MLS ID: 6763766.",
+      "price": 7775000,
+      "currency": "$",
+      "location": {
+        "address": "6507 Bridge Point Gardenia 2b Pkwy",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78730",
+        "country": "US",
+        "lat": 30.355352,
+        "lng": -97.80397,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "areaSqFt": 2857,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 2025,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "6763766",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.395Z"
+      },
+      "seller": {
+        "name": "Mary Anne Mcmahon",
+        "type": "agent",
+        "phone": "5129479684",
+        "email": "maryannemcmahon1@gmail.com",
+        "company": "@ PROPERTIES CHRISTIE'S INTERNATIONAL"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.355352,
+          "lng": -97.80397,
+          "address": "6507 Bridge Point Gardenia 2b Pkwy"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 93,
+        "breakdown": {
+          "budgetFit": 90,
+          "locationFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis."
+        ],
+        "tradeoffs": []
+      }
+    }
+  ],
+  "savedProperties": [
+    {
+      "id": "sp_initial_1",
+      "userId": "user_default_buyer",
+      "propertyId": "austin_prop_1",
+      "notes": "Top choice: EV garage and within walking distance of downtown.",
+      "createdAt": "2026-09-02T09:30:00.000Z"
+    },
+    {
+      "id": "sp_1788453016235_77a50",
+      "userId": "user_default_buyer",
+      "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+      "notes": "Dream yard",
+      "createdAt": "2026-09-03T16:30:16.235Z"
+    }
+  ],
+  "viewingRequests": [
+    {
+      "id": "vr_initial_1",
+      "userId": "user_default_buyer",
+      "propertyId": "austin_prop_1",
+      "propertyTitle": "Modern Craftsman on West Avenue",
+      "propertyPrice": 685000,
+      "preferredDate": "2026-09-05",
+      "preferredTime": "14:00",
+      "notes": "Requesting viewing with private agent.",
+      "status": "pending",
+      "createdAt": "2026-09-02T09:45:00.000Z"
+    },
+    {
+      "id": "vr_1788453016259_egoxs",
+      "userId": "user_default_buyer",
+      "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+      "propertyTitle": "11248 Tom Sassman Rd, Austin, TX 78747",
+      "propertyPrice": 1850000,
+      "preferredDate": "2026-09-15",
+      "preferredTime": "14:00",
+      "notes": "Looking forward to seeing the open layout.",
+      "status": "pending",
+      "createdAt": "2026-09-03T16:30:16.259Z"
+    }
+  ],
+  "sellerContacts": [
+    {
+      "userId": "user_default_buyer",
+      "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+      "propertyTitle": "11248 Tom Sassman Rd, Austin, TX 78747",
+      "propertyPrice": 1850000,
+      "actionName": "Contact Seller",
+      "recipient": "Gary Steele",
+      "message": "Is the seller open to a 30-day close?",
+      "id": "sc_1788453016267_pz7kq",
+      "requiresApproval": true,
+      "approvalStatus": "approved",
+      "createdAt": "2026-09-03T16:30:16.267Z"
+    }
+  ],
+  "agentActions": [],
+  "webmcpToolLogs": [
+    {
+      "userId": "user_default_buyer",
+      "toolName": "contact_seller",
+      "input": {
+        "contactId": "sc_1788453016267_pz7kq"
+      },
+      "outputSummary": "Human approved contact to Gary Steele. Message officially dispatched.",
+      "success": true,
+      "approvalStatus": "approved",
+      "id": "log_1788453016275_clp87",
+      "timestamp": "2026-09-03T16:30:16.275Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "contact_seller",
+      "input": {
+        "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+        "message": "Is the seller open to a 30-day close?"
+      },
+      "outputSummary": "Drafted message to seller Gary Steele. Pausing for explicit human approval.",
+      "success": true,
+      "approvalStatus": "pending",
+      "id": "log_1788453016268_yz0yz",
+      "timestamp": "2026-09-03T16:30:16.268Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "create_viewing_request",
+      "input": {
+        "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+        "preferredDate": "2026-09-15",
+        "preferredTime": "14:00"
+      },
+      "outputSummary": "Created viewing appointment for 11248 Tom Sassman Rd, Austin, TX 78747 on 2026-09-15 at 14:00 (Status: Pending Seller Confirmation).",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788453016260_cqawx",
+      "timestamp": "2026-09-03T16:30:16.260Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "save_property",
+      "input": {
+        "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+        "notes": "Dream yard"
+      },
+      "outputSummary": "Property 11248-Tom-Sassman-Rd,-Austin,-TX-78747 saved to user profile.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788453016236_6uls3",
+      "timestamp": "2026-09-03T16:30:16.236Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "calculate_affordability",
+      "input": {
+        "propertyPrice": 650000,
+        "downPayment": 130000,
+        "financingRate": 6.75,
+        "financingYears": 30,
+        "budget": 4500
+      },
+      "outputSummary": "Estimated monthly payment $4,266.46 on $650,000 home.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788453001554_3wn1v",
+      "timestamp": "2026-09-03T16:30:01.554Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_neighborhood",
+      "input": {
+        "location": {
+          "lat": 30.27,
+          "lng": -97.74
+        },
+        "radius": 2500
+      },
+      "outputSummary": "Verified 5 schools and 5 transit stops near East 9th Street, Downtown, Austin, .",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452991359_6mjz5",
+      "timestamp": "2026-09-03T16:29:51.359Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_neighborhood",
+      "input": {
+        "location": {
+          "lat": 30.27,
+          "lng": -97.74
+        },
+        "radius": 2500
+      },
+      "outputSummary": "Verified 4 schools and 4 transit stops near East 9th Street, Downtown, Austin, .",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452944957_u7qmb",
+      "timestamp": "2026-09-03T16:29:04.957Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "compare_properties",
+      "input": {
+        "propertyIds": [
+          "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+          "austin_prop_1"
+        ]
+      },
+      "outputSummary": "Compared 2 properties. Top match is 11248 Tom Sassman Rd, Austin, TX 78747 with score 93/100.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452887661_t016m",
+      "timestamp": "2026-09-03T16:28:07.661Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "get_property_details",
+      "input": {
+        "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747"
+      },
+      "outputSummary": "Retrieved specifications for 11248 Tom Sassman Rd, Austin, TX 78747 ($1,850,000).",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452882257_bscys",
+      "timestamp": "2026-09-03T16:28:02.257Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452877745_8kgcz",
+      "timestamp": "2026-09-03T16:27:57.745Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452871384_3kyi0",
+      "timestamp": "2026-09-03T16:27:51.384Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 0 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452578722_fdktd",
+      "timestamp": "2026-09-03T16:22:58.722Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 0 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452261548_dzsbn",
+      "timestamp": "2026-09-03T16:17:41.548Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 0 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788452261537_ztk8f",
+      "timestamp": "2026-09-03T16:17:41.537Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 3 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788447086160_m3x1o",
+      "timestamp": "2026-09-03T14:51:26.160Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 3 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788447086157_w77pu",
+      "timestamp": "2026-09-03T14:51:26.157Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3
+      },
+      "outputSummary": "Found 3 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788446468039_whp38",
+      "timestamp": "2026-09-03T14:41:08.039Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3
+      },
+      "outputSummary": "Found 0 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788446442729_3o8a3",
+      "timestamp": "2026-09-03T14:40:42.729Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3
+      },
+      "outputSummary": "Found 0 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788446421283_zo6nb",
+      "timestamp": "2026-09-03T14:40:21.283Z"
+    },
+    {
+      "id": "log_init_1",
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3
+      },
+      "outputSummary": "Initial search retrieved 5 verified Austin properties with DreamHome Match Scores.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "timestamp": "2026-09-03T07:00:00.000Z"
+    }
+  ]
+}
