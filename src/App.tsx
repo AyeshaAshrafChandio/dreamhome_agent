@@ -20,6 +20,7 @@ export function App() {
   const [savedProperties, setSavedProperties] = useState<Property[]>([]);
   const [comparedPropertyIds, setComparedPropertyIds] = useState<string[]>([]);
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
+  const [savedModalSubTab, setSavedModalSubTab] = useState<'saved' | 'viewings' | 'contacts'>('saved');
   const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [approvalRequest, setApprovalRequest] = useState<ApprovalPromptRequest | null>(null);
@@ -201,6 +202,13 @@ export function App() {
           bridge.executeTool('contact_seller', {
             propertyId: propId,
             message: intent.approvalPayload?.draftMessage,
+          }).then((res: any) => {
+            if (res?.status === 'sent') {
+              setStatusNotification({
+                type: 'success',
+                message: 'Inquiry successfully transmitted to the listing agent. View it anytime in "Saved & Tours" under "Seller Inquiries".',
+              });
+            }
           }).catch((err) => {
             console.log('Approval gate outcome:', err.message);
           });
@@ -214,6 +222,20 @@ export function App() {
             message: 'Tour scheduled successfully (Status: Pending seller confirmation).',
           });
         }
+      } else if (intent.toolToExecute === 'calculate_affordability') {
+        const targetProp = properties.find((p) => p.id === intent.targetPropertyId) || properties[0];
+        if (targetProp) {
+          setSelectedProperty(targetProp);
+        }
+        const calcResult = await bridge.executeTool('calculate_affordability', intent.toolInput || {
+          budget: 4500,
+          propertyPrice: targetProp?.price || 650000,
+          downPayment: Math.round((targetProp?.price || 650000) * 0.2),
+        });
+        setStatusNotification({
+          type: 'info',
+          message: `Monthly Payment Calculation: $${Math.round(calcResult?.totalMonthlyPayment || 0).toLocaleString()}/mo (P&I: $${Math.round(calcResult?.principalAndInterest || 0).toLocaleString()}, Taxes & Ins: $${Math.round((calcResult?.propertyTaxMonthly || 0) + (calcResult?.homeInsuranceMonthly || 0)).toLocaleString()}). ${calcResult?.isAffordable ? 'Comfortably within budget.' : 'Exceeds budget limit.'}`,
+        });
       } else {
         // General query or explanation
         setStatusNotification({
@@ -268,6 +290,13 @@ export function App() {
     bridge.executeTool('contact_seller', {
       propertyId: property.id,
       message: `Hello, I am interested in ${property.title}. Could you please share more information regarding availability and utility costs?`,
+    }).then((res: any) => {
+      if (res?.status === 'sent') {
+        setStatusNotification({
+          type: 'success',
+          message: `Inquiry successfully transmitted to ${property.seller?.name || 'the listing agent'} for ${property.title}. You can track this under "Saved & Tours > Seller Inquiries".`,
+        });
+      }
     }).catch((e) => console.log('Contact seller outcome:', e.message));
   };
 
@@ -305,10 +334,10 @@ export function App() {
       />
 
       {/* Main Content Area */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-6 pb-24 md:pb-6">
         {/* Status Notification Banner */}
         {statusNotification && (
-          <div className={`mb-6 p-3.5 rounded-lg border text-xs sm:text-sm flex items-start justify-between gap-3 animate-in fade-in duration-200 ${
+          <div className={`mb-4 sm:mb-6 p-3 sm:p-3.5 rounded-lg border text-xs sm:text-sm flex items-start justify-between gap-3 animate-in fade-in duration-200 ${
             statusNotification.type === 'success'
               ? 'bg-emerald-50 border-emerald-200 text-emerald-900'
               : statusNotification.type === 'warning'
@@ -327,7 +356,7 @@ export function App() {
             </div>
             <button
               onClick={() => setStatusNotification(null)}
-              className="text-slate-400 hover:text-slate-700 text-xs font-bold px-1"
+              className="text-slate-400 hover:text-slate-700 text-xs font-bold px-2 py-1 min-h-[32px] min-w-[32px] flex items-center justify-center cursor-pointer"
             >
               ✕
             </button>
@@ -362,7 +391,7 @@ export function App() {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => setShowMap(!showMap)}
-                  className={`px-3 py-1.5 rounded-md text-xs font-medium border transition-colors flex items-center gap-1.5 ${
+                  className={`px-3.5 py-2 sm:py-1.5 rounded-lg sm:rounded-md text-xs font-medium border transition-colors flex items-center gap-1.5 min-h-[38px] cursor-pointer touch-manipulation ${
                     showMap ? 'bg-slate-900 text-white border-slate-900' : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
                   }`}
                 >
@@ -483,12 +512,13 @@ export function App() {
             onRemoveSaved={(id) => handleSaveToggle({ id } as Property)}
             onSelectProperty={(p) => setSelectedProperty(p)}
             onRefresh={loadSavedProperties}
+            initialSubTab={savedModalSubTab}
           />
         )}
       </main>
 
       {/* Clean Minimalism Application Footer */}
-      <footer className="p-3 sm:p-4 bg-slate-900 text-slate-400 shrink-0 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs">
+      <footer className="p-3 sm:p-4 mb-16 md:mb-0 bg-slate-900 text-slate-400 shrink-0 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs">
         <div className="flex items-center gap-2 text-slate-300">
           <span className="w-2 h-2 bg-emerald-400 rounded-full" />
           <span className="font-medium">DreamHome Agent</span>
@@ -523,6 +553,10 @@ export function App() {
       <ApprovalGateModal
         request={approvalRequest}
         onClose={() => setApprovalRequest(null)}
+        onViewInquiries={() => {
+          setSavedModalSubTab('contacts');
+          setActiveTab('saved');
+        }}
       />
 
       {/* Settings & Integration Diagnostics Modal */}

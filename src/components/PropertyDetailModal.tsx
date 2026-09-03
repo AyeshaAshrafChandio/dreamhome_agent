@@ -40,11 +40,11 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
   const neighborhood = property.neighborhood;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
-      <div className="bg-white rounded-xl max-w-4xl w-full shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[92vh] flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
+      <div className="bg-white rounded-xl max-w-4xl w-full shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[94vh] flex flex-col">
         {/* Modal Header */}
-        <div className="px-6 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
-          <div className="flex items-center space-x-3">
+        <div className="px-4 py-3 sm:px-6 sm:py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50 shrink-0">
+          <div className="flex items-center space-x-2 sm:space-x-3">
             <span className="px-2.5 py-1 text-xs font-semibold rounded-md bg-slate-900 text-white">
               {property.propertyType.replace('_', ' ').toUpperCase()}
             </span>
@@ -53,25 +53,26 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-md hover:bg-slate-200 text-slate-600 transition-colors"
+            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 transition-colors cursor-pointer touch-manipulation"
+            aria-label="Close details"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Scrollable Content */}
-        <div className="p-6 overflow-y-auto space-y-6">
+        <div className="p-4 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6">
           {/* Main Title & Price */}
           <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900">{property.title}</h2>
-              <div className="flex items-center text-slate-500 text-sm mt-1">
-                <MapPin className="w-4 h-4 mr-1 text-slate-400" />
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">{property.title}</h2>
+              <div className="flex items-center text-slate-500 text-xs sm:text-sm mt-1">
+                <MapPin className="w-4 h-4 mr-1 text-slate-400 shrink-0" />
                 <span>{property.location.address || property.location.city}, {property.location.state || property.location.country}</span>
               </div>
             </div>
-            <div className="text-right">
-              <div className="text-3xl font-extrabold text-slate-900 font-mono">
+            <div className="text-left sm:text-right mt-1 sm:mt-0">
+              <div className="text-2xl sm:text-3xl font-extrabold text-slate-900 font-mono">
                 ${property.price.toLocaleString()}
               </div>
               <div className="text-xs text-slate-500">
@@ -81,9 +82,9 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
           </div>
 
           {/* Key Specs Bar */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 bg-slate-50 rounded-lg border border-slate-200">
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 p-3 sm:p-4 bg-slate-50 rounded-lg border border-slate-200">
+            <div className="flex items-center space-x-2.5 sm:space-x-3">
+              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                 <Bed className="w-4 h-4 text-slate-700" />
               </div>
               <div>
@@ -92,8 +93,8 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700">
+            <div className="flex items-center space-x-2.5 sm:space-x-3">
+              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                 <Bath className="w-4 h-4 text-slate-700" />
               </div>
               <div>
@@ -102,8 +103,8 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700">
+            <div className="flex items-center space-x-2.5 sm:space-x-3">
+              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                 <Square className="w-4 h-4 text-slate-700" />
               </div>
               <div>
@@ -112,13 +113,13 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center space-x-3">
-              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700">
+            <div className="flex items-center space-x-2.5 sm:space-x-3">
+              <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                 <Compass className="w-4 h-4 text-slate-700" />
               </div>
               <div>
                 <div className="text-[10px] uppercase font-bold text-slate-400">Style / Built</div>
-                <div className="text-sm font-bold text-slate-900">{property.architecturalStyle || 'Modern'} ({property.yearBuilt || 'Recent'})</div>
+                <div className="text-sm font-bold text-slate-900 truncate">{property.architecturalStyle || 'Modern'}</div>
               </div>
             </div>
           </div>
@@ -326,14 +327,14 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               </span>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
               <div>
                 <label className="text-slate-400 block mb-1">Down Payment ($)</label>
                 <input
                   type="number"
                   value={downPayment}
                   onChange={(e) => setDownPayment(Number(e.target.value))}
-                  className="w-full p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono outline-hidden focus:border-slate-500"
+                  className="w-full p-2.5 sm:p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono text-sm sm:text-xs outline-hidden focus:border-slate-500 min-h-[42px] sm:min-h-0"
                 />
               </div>
 
@@ -344,7 +345,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                   step="0.1"
                   value={interestRate}
                   onChange={(e) => setInterestRate(Number(e.target.value))}
-                  className="w-full p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono outline-hidden focus:border-slate-500"
+                  className="w-full p-2.5 sm:p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono text-sm sm:text-xs outline-hidden focus:border-slate-500 min-h-[42px] sm:min-h-0"
                 />
               </div>
 
@@ -353,7 +354,7 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                 <select
                   value={loanYears}
                   onChange={(e) => setLoanYears(Number(e.target.value))}
-                  className="w-full p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono outline-hidden focus:border-slate-500"
+                  className="w-full p-2.5 sm:p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono text-sm sm:text-xs outline-hidden focus:border-slate-500 min-h-[42px] sm:min-h-0"
                 >
                   <option value={15}>15 Years Fixed</option>
                   <option value={30}>30 Years Fixed</option>
@@ -366,13 +367,13 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
                   type="number"
                   value={buyerBudget}
                   onChange={(e) => setBuyerBudget(Number(e.target.value))}
-                  className="w-full p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono outline-hidden focus:border-slate-500"
+                  className="w-full p-2.5 sm:p-2 bg-slate-800 border border-slate-700 rounded-md text-white font-mono text-sm sm:text-xs outline-hidden focus:border-slate-500 min-h-[42px] sm:min-h-0"
                 />
               </div>
             </div>
 
             {/* Affordability Output Breakdown */}
-            <div className="p-4 bg-slate-800/90 rounded-lg border border-slate-700 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div className="p-3.5 sm:p-4 bg-slate-800/90 rounded-lg border border-slate-700 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-center">
               <div>
                 <div className="text-[10px] text-slate-400 uppercase font-semibold">Principal & Interest</div>
                 <div className="text-sm font-bold text-white mt-0.5">
@@ -406,31 +407,31 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
         </div>
 
         {/* Modal Footer Actions */}
-        <div className="px-6 py-4 bg-slate-50 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+        <div className="px-4 py-3 sm:px-6 sm:py-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 sm:gap-3 shrink-0">
           <button
             onClick={() => onSave(property)}
-            className={`px-3 py-2 rounded-md text-xs font-medium transition-colors flex items-center space-x-2 ${
+            className={`w-full sm:w-auto px-4 py-2.5 sm:py-2 rounded-lg sm:rounded-md text-xs font-medium transition-colors flex items-center justify-center space-x-2 min-h-[44px] cursor-pointer touch-manipulation ${
               isSaved ? 'bg-rose-500 text-white' : 'bg-white border border-slate-300 text-slate-700 hover:bg-slate-100'
             }`}
           >
-            <Heart className={`w-3.5 h-3.5 ${isSaved ? 'fill-current' : ''}`} />
+            <Heart className={`w-4 h-4 sm:w-3.5 sm:h-3.5 ${isSaved ? 'fill-current' : ''}`} />
             <span>{isSaved ? 'Saved to Favorites' : 'Save Property'}</span>
           </button>
 
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
             <button
               onClick={() => onScheduleViewing(property)}
-              className="px-3.5 py-2 bg-white border border-slate-300 text-slate-800 hover:bg-slate-100 rounded-md text-xs font-medium transition-colors flex items-center space-x-1.5"
+              className="w-full sm:w-auto px-4 py-2.5 sm:py-2 bg-white border border-slate-300 text-slate-800 hover:bg-slate-100 rounded-lg sm:rounded-md text-xs font-medium transition-colors flex items-center justify-center space-x-1.5 min-h-[44px] cursor-pointer touch-manipulation"
             >
-              <Calendar className="w-3.5 h-3.5 text-slate-600" />
+              <Calendar className="w-4 h-4 sm:w-3.5 sm:h-3.5 text-slate-600" />
               <span>Schedule Viewing</span>
             </button>
 
             <button
               onClick={() => onContactSeller(property)}
-              className="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-md text-xs font-semibold shadow-xs transition-colors flex items-center space-x-1.5"
+              className="w-full sm:w-auto px-4 py-2.5 sm:py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg sm:rounded-md text-xs font-semibold shadow-xs transition-colors flex items-center justify-center space-x-1.5 min-h-[44px] cursor-pointer touch-manipulation"
             >
-              <MessageSquare className="w-3.5 h-3.5" />
+              <MessageSquare className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
               <span>Contact Seller (Approval Gate)</span>
             </button>
           </div>

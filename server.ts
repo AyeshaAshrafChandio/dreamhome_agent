@@ -544,6 +544,12 @@ app.post('/api/contacts/draft', async (req: Request, res: Response) => {
       propertyPrice: prop.price,
       actionName: 'Contact Seller',
       recipient: prop.seller.name || 'Listing Agent',
+      sellerName: prop.seller.name || 'Listing Agent',
+      sellerCompany: prop.seller.company || 'Licensed Brokerage',
+      sellerPhone: prop.seller.phone,
+      sellerEmail: prop.seller.email,
+      mlsId: prop.source?.listingId,
+      providerName: prop.source?.providerName || 'MLS Live Data',
       message: message || `Hello, I am interested in ${prop.title}. Please provide more details on availability.`,
     });
 
@@ -611,6 +617,32 @@ app.post('/api/contacts/:id/reject', async (req: Request, res: Response) => {
     });
 
     res.json({ success: true, status: 'rejected' });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+app.post('/api/contacts/:id/follow-up', async (req: Request, res: Response) => {
+  try {
+    const { id } = req.params;
+    const { text } = req.body;
+    if (!text || !text.trim()) {
+      return res.status(400).json({ error: 'Message text cannot be empty' });
+    }
+    const userId = getAuthUserId(req);
+    const updated = await dbManager.addFollowUpMessage(id, userId, text.trim());
+    if (!updated) return res.status(404).json({ error: 'Contact not found' });
+
+    await dbManager.logWebMcpAction({
+      userId,
+      toolName: 'contact_seller',
+      input: { contactId: id, followUp: text.trim() },
+      outputSummary: `User sent follow-up message to ${updated.sellerName || updated.recipient}.`,
+      success: true,
+      approvalStatus: 'approved',
+    });
+
+    res.json({ success: true, contact: updated });
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }

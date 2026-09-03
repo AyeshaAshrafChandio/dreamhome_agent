@@ -171,11 +171,32 @@ export interface SellerContactDraft {
     email?: string;
     phone?: string;
   };
+  sellerName?: string;
+  sellerCompany?: string;
+  sellerPhone?: string;
+  sellerEmail?: string;
+  mlsId?: string;
+  providerName?: string;
   message: string;
   actionName: string;
   requiresApproval: boolean;
   approvalStatus: 'pending' | 'approved' | 'rejected';
   createdAt: string;
+  dispatchedAt?: string;
+  deliveryStatus?: 'delivered' | 'read' | 'pending';
+  agentReply?: {
+    from: string;
+    company?: string;
+    text: string;
+    receivedAt: string;
+    status: string;
+  };
+  followUps?: Array<{
+    id: string;
+    sender: 'user' | 'agent';
+    text: string;
+    sentAt: string;
+  }>;
 }
 
 export interface UserProfile {

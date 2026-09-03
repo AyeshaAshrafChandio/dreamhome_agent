@@ -53,8 +53,7 @@ export async function processUserIntent(
   const ai = getAiClient();
 
   if (ai) {
-    try {
-      const prompt = `
+    const prompt = `
 You are the DreamHome AI Real Estate Agent operating a web application via WebMCP tools.
 The user message is: "${userMessage}"
 
@@ -96,27 +95,58 @@ Analyze the user's intent and return a clean JSON object with this exact schema:
 Return ONLY valid JSON.
 `;
 
-      const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new Error('Gemini API call timed out after 6s')), 6000)
-      );
+    // Cascade through valid Gemini models to gracefully absorb temporary 503/429 demand spikes
+    const candidateModels = ['gemini-3.8-flash', 'gemini-3.1-flash-lite', 'gemini-flash-latest'];
 
-      const response: any = await Promise.race([
-        ai.models.generateContent({
-          model: 'gemini-3.8-flash',
-          contents: prompt,
-          config: {
-            responseMimeType: 'application/json',
-            temperature: 0.1,
-          },
-        }),
-        timeoutPromise,
-      ]);
+    for (let i = 0; i < candidateModels.length; i++) {
+      const modelName = candidateModels[i];
+      try {
+        const timeoutPromise = new Promise((_, reject) =>
+          setTimeout(() => reject(new Error(`Gemini API call timed out after 10s for ${modelName}`)), 10000)
+        );
 
-      const text = response.text?.trim() || '';
-      const parsed = JSON.parse(text);
-      return parsed;
-    } catch (err) {
-      console.warn('Gemini API call error in processUserIntent, falling back to deterministic parser:', err);
+        const response: any = await Promise.race([
+          ai.models.generateContent({
+            model: modelName,
+            contents: prompt,
+            config: {
+              responseMimeType: 'application/json',
+              temperature: 0.1,
+            },
+          }),
+          timeoutPromise,
+        ]);
+
+        let text = response.text?.trim() || '';
+        // Strip markdown fences if present
+        if (text.startsWith('```json')) text = text.slice(7);
+        else if (text.startsWith('```')) text = text.slice(3);
+        if (text.endsWith('```')) text = text.slice(0, -3);
+        text = text.trim();
+
+        if (text) {
+          const parsed = JSON.parse(text);
+          if (parsed && parsed.intent) {
+            return parsed;
+          }
+        }
+      } catch (err: any) {
+        const isUnavailable =
+          err?.status === 503 ||
+          err?.code === 503 ||
+          String(err?.message || '').includes('503') ||
+          String(err?.message || '').includes('high demand') ||
+          String(err?.message || '').includes('UNAVAILABLE') ||
+          String(err?.message || '').includes('timed out');
+
+        if (i < candidateModels.length - 1) {
+          console.info(`[DreamHome AI] Model ${modelName} ${isUnavailable ? 'temporarily experiencing high demand' : 'unavailable'}; seamlessly trying candidate ${candidateModels[i + 1]}...`);
+          // Brief pause before trying fallback candidate model
+          await new Promise((r) => setTimeout(r, 400));
+        } else {
+          console.info('[DreamHome AI] External AI service temporarily busy; continuing with resilient deterministic parsing.');
+        }
+      }
     }
   }
 
@@ -146,6 +176,30 @@ function parseIntentDeterministic(
         draftMessage: `Hello, I am interested in your listing for ${firstProp?.title || 'the property'} listed at $${firstProp?.price?.toLocaleString() || 'the asking price'}. Could you please share more details regarding utility costs and viewing availability this week? Thank you!`,
       },
       explanation: 'Consequential action detected: Contacting a seller requires explicit human approval before any message is sent.',
+    };
+  }
+
+  // Affordability / Mortgage intent
+  if (lower.includes('afford') || lower.includes('mortgage') || lower.includes('monthly payment') || lower.includes('loan payment') || lower.includes('financing')) {
+    const firstProp = context.currentProperties?.[0];
+    const price = firstProp?.price || 650000;
+    const downPayment = Math.round(price * 0.2);
+    return {
+      intent: 'affordability',
+      summary: `Calculating monthly mortgage and affordability breakdown for ${firstProp?.title || 'property'}.`,
+      toolToExecute: 'calculate_affordability',
+      targetPropertyId: firstProp?.id,
+      toolInput: {
+        budget: 4500,
+        propertyPrice: price,
+        downPayment,
+        financingRate: 6.5,
+        financingYears: 30,
+        propertyTaxRate: 1.2,
+        homeInsuranceAnnual: 1800,
+        hoaMonthly: 0,
+      },
+      explanation: `Deterministic financial calculation: Standard 30-year mortgage at 6.5% interest with 20% down payment for $${price.toLocaleString()}.`,
     };
   }
 
@@ -209,6 +263,18 @@ function parseIntentDeterministic(
   const inMatch = message.match(/\b(?:in|at|around|near)\s+([A-Za-z0-9\s,]+?)(?:\s+under|\s+with|\s+for|\s+below|\s+having|\.|$)/i);
   if (inMatch && inMatch[1].trim()) {
     criteria.location = inMatch[1].trim();
+  } else {
+    const knownLocations = [
+      'Austin', 'Seattle', 'Miami', 'Denver', 'New York', 'San Francisco',
+      'Los Angeles', 'Chicago', 'Dallas', 'Boston', 'San Diego', 'Portland',
+      'Atlanta', 'Phoenix', 'Houston', 'Nashville'
+    ];
+    for (const city of knownLocations) {
+      if (new RegExp(`\\b${city}\\b`, 'i').test(message)) {
+        criteria.location = city;
+        break;
+      }
+    }
   }
 
   // Budget extraction

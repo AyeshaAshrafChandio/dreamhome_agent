@@ -61,41 +61,43 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           #{index + 1}
         </div>
 
-        {/* Quick Save & Compare buttons */}
+        {/* Quick Save & Compare buttons with accessible touch targets */}
         <div className="absolute bottom-3 right-3 flex items-center gap-1.5 z-10">
           <button
             onClick={(e) => {
               e.stopPropagation();
               onToggleCompare(property);
             }}
-            className={`w-8 h-8 rounded-md border backdrop-blur-xs transition-colors flex items-center justify-center text-xs shadow-xs ${
+            className={`w-9 h-9 sm:w-8 sm:h-8 rounded-md border backdrop-blur-xs transition-colors flex items-center justify-center text-xs shadow-xs cursor-pointer touch-manipulation active:scale-95 ${
               isCompared
                 ? 'bg-slate-900 text-white border-slate-900'
                 : 'bg-white/95 text-slate-600 hover:text-slate-900 hover:bg-white border-slate-200'
             }`}
             title={isCompared ? 'Remove from Compare' : 'Add to Compare'}
+            aria-label={isCompared ? 'Remove from Compare' : 'Add to Compare'}
           >
-            <GitCompare className="w-3.5 h-3.5" />
+            <GitCompare className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
           </button>
           <button
             onClick={(e) => {
               e.stopPropagation();
               onSave(property);
             }}
-            className={`w-8 h-8 rounded-md border backdrop-blur-xs transition-colors flex items-center justify-center text-xs shadow-xs ${
+            className={`w-9 h-9 sm:w-8 sm:h-8 rounded-md border backdrop-blur-xs transition-colors flex items-center justify-center text-xs shadow-xs cursor-pointer touch-manipulation active:scale-95 ${
               isSaved
                 ? 'bg-rose-500 text-white border-rose-500'
                 : 'bg-white/95 text-slate-600 hover:text-rose-600 hover:bg-white border-slate-200'
             }`}
             title={isSaved ? 'Remove from Saved' : 'Save Property'}
+            aria-label={isSaved ? 'Remove from Saved' : 'Save Property'}
           >
-            <Heart className={`w-3.5 h-3.5 ${isSaved ? 'fill-current' : ''}`} />
+            <Heart className={`w-4 h-4 sm:w-3.5 sm:h-3.5 ${isSaved ? 'fill-current' : ''}`} />
           </button>
         </div>
       </div>
 
       {/* Property Details */}
-      <div className="p-4 flex flex-col flex-1 justify-between">
+      <div className="p-3.5 sm:p-4 flex flex-col flex-1 justify-between">
         <div>
           {/* Header Title & Price */}
           <div className="flex justify-between items-start gap-2 mb-1">
@@ -116,7 +118,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           </p>
 
           {/* Clean Minimalism 3-Box Spec Grid */}
-          <div className="grid grid-cols-3 gap-2 mb-3">
+          <div className="grid grid-cols-3 gap-1.5 sm:gap-2 mb-3">
             <div className="bg-slate-50 p-2 rounded-lg text-center border border-slate-100">
               <div className="text-[10px] text-slate-400 uppercase font-bold">Beds</div>
               <div className="text-sm font-bold text-slate-900">{property.bedrooms}</div>
@@ -149,30 +151,30 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
 
         {/* Action Controls & Affordability Status */}
-        <div className="mt-auto pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+        <div className="mt-auto pt-3 border-t border-slate-100 flex flex-col xs:flex-row xs:items-center justify-between gap-2.5">
           <span className="text-xs font-bold text-emerald-600 flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span>
-            Affordability Confirmed
+            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full shrink-0"></span>
+            <span className="truncate">Affordability Confirmed</span>
           </span>
 
-          <div className="flex items-center gap-1.5">
+          <div className="grid grid-cols-3 gap-1.5 w-full xs:w-auto shrink-0">
             <button
               onClick={() => onScheduleViewing(property)}
-              className="px-2.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-medium rounded-md transition-colors"
+              className="px-2.5 py-2 sm:py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-medium rounded-md transition-colors min-h-[38px] flex items-center justify-center cursor-pointer touch-manipulation"
               title="Schedule viewing"
             >
               Tour
             </button>
             <button
               onClick={() => onContactSeller(property)}
-              className="px-2.5 py-1.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-medium rounded-md transition-colors"
+              className="px-2.5 py-2 sm:py-1.5 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 text-xs font-medium rounded-md transition-colors min-h-[38px] flex items-center justify-center cursor-pointer touch-manipulation"
               title="Contact Seller (Approval gated)"
             >
               Contact
             </button>
             <button
               onClick={() => onSelectDetails(property)}
-              className="px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-md transition-colors"
+              className="px-3 py-2 sm:py-1.5 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-md transition-colors min-h-[38px] flex items-center justify-center cursor-pointer touch-manipulation"
             >
               Details
             </button>

@@ -9,32 +9,33 @@ interface SettingsModalProps {
 
 export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onClose }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
-      <div className="bg-white rounded-xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[90vh] flex flex-col">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
+      <div className="bg-white rounded-xl max-w-2xl w-full shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[92vh] flex flex-col">
         {/* Header */}
-        <div className="px-6 py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+        <div className="px-4 py-3 sm:px-6 sm:py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50 shrink-0">
           <div className="flex items-center space-x-2">
-            <Server className="w-5 h-5 text-slate-700" />
-            <h2 className="font-bold text-base sm:text-lg text-slate-900">Provider & Integration Diagnostics</h2>
+            <Server className="w-5 h-5 text-slate-700 shrink-0" />
+            <h2 className="font-bold text-sm sm:text-lg text-slate-900 truncate">Provider & Diagnostics</h2>
           </div>
           <button
             onClick={onClose}
-            className="p-1.5 rounded-md hover:bg-slate-200 text-slate-600 transition-colors"
+            className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-slate-200 text-slate-600 transition-colors cursor-pointer touch-manipulation"
+            aria-label="Close settings"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content */}
-        <div className="p-6 overflow-y-auto space-y-6">
+        <div className="p-4 sm:p-6 overflow-y-auto space-y-4 sm:space-y-6">
           {/* WebMCP Status */}
-          <div className="p-4 bg-slate-900 text-white rounded-lg border border-slate-800 space-y-2">
-            <div className="flex items-center justify-between">
+          <div className="p-3.5 sm:p-4 bg-slate-900 text-white rounded-lg border border-slate-800 space-y-2">
+            <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-2">
               <div className="flex items-center space-x-2">
-                <Terminal className="w-4 h-4 text-emerald-400" />
+                <Terminal className="w-4 h-4 text-emerald-400 shrink-0" />
                 <h3 className="font-bold text-sm">WebMCP Architecture Status</h3>
               </div>
-              <span className="px-2.5 py-0.5 rounded-md text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              <span className="w-fit px-2.5 py-0.5 rounded-md text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
                 Active & Standards Compliant
               </span>
             </div>
@@ -51,7 +52,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
             </h3>
 
             {/* AI Engine */}
-            <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex items-start justify-between gap-3">
+            <div className="p-3 sm:p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col xs:flex-row xs:items-start justify-between gap-2.5 sm:gap-3">
               <div className="flex items-start space-x-3">
                 <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                   <Sparkles className="w-4 h-4" />
@@ -61,7 +62,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
                   <div className="text-xs text-slate-500">Model: gemini-3.8-flash (Server-Side @google/genai SDK)</div>
                 </div>
               </div>
-              <span className={`px-2 py-0.5 rounded-md text-xs font-medium shrink-0 flex items-center space-x-1 ${
+              <span className={`px-2 py-0.5 rounded-md text-xs font-medium w-fit shrink-0 flex items-center space-x-1 ${
                 systemStatus?.providers.ai.configured
                   ? 'bg-emerald-100 text-emerald-800'
                   : 'bg-amber-100 text-amber-800'
@@ -81,7 +82,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
             </div>
 
             {/* Geocoding Provider */}
-            <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex items-start justify-between gap-3">
+            <div className="p-3 sm:p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col xs:flex-row xs:items-start justify-between gap-2.5 sm:gap-3">
               <div className="flex items-start space-x-3">
                 <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                   <MapPin className="w-4 h-4" />
@@ -91,14 +92,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
                   <div className="text-xs text-slate-500">OpenStreetMap Nominatim (Live Global Coordinates)</div>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
+              <span className="w-fit px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Active</span>
               </span>
             </div>
 
             {/* Places / Neighborhood Provider */}
-            <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex items-start justify-between gap-3">
+            <div className="p-3 sm:p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col xs:flex-row xs:items-start justify-between gap-2.5 sm:gap-3">
               <div className="flex items-start space-x-3">
                 <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                   <Compass className="w-4 h-4" />
@@ -108,14 +109,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
                   <div className="text-xs text-slate-500">OpenStreetMap Overpass Engine (Schools, Hospitals, Transit)</div>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
+              <span className="w-fit px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Active</span>
               </span>
             </div>
 
             {/* Property API Provider */}
-            <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex items-start justify-between gap-3">
+            <div className="p-3 sm:p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col xs:flex-row xs:items-start justify-between gap-2.5 sm:gap-3">
               <div className="flex items-start space-x-3">
                 <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                   <Key className="w-4 h-4" />
@@ -127,7 +128,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
                   </div>
                 </div>
               </div>
-              <span className={`px-2 py-0.5 rounded-md text-xs font-medium shrink-0 flex items-center space-x-1 ${
+              <span className={`w-fit px-2 py-0.5 rounded-md text-xs font-medium shrink-0 flex items-center space-x-1 ${
                 systemStatus?.providers.propertyApi.configured
                   ? 'bg-emerald-100 text-emerald-800'
                   : 'bg-slate-200 text-slate-700'
@@ -144,7 +145,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
             </div>
 
             {/* Database Engine */}
-            <div className="p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex items-start justify-between gap-3">
+            <div className="p-3 sm:p-3.5 bg-slate-50 rounded-lg border border-slate-200 flex flex-col xs:flex-row xs:items-start justify-between gap-2.5 sm:gap-3">
               <div className="flex items-start space-x-3">
                 <div className="p-2 bg-white rounded-md border border-slate-200 text-slate-700 shrink-0">
                   <Database className="w-4 h-4" />
@@ -158,7 +159,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
                   </div>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
+              <span className="w-fit px-2 py-0.5 rounded-md text-xs font-medium bg-emerald-100 text-emerald-800 shrink-0 flex items-center space-x-1">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span>Storage Ready</span>
               </span>
@@ -166,7 +167,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ systemStatus, onCl
           </div>
 
           {/* Configuration Guide */}
-          <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2 text-xs">
+          <div className="p-3.5 sm:p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2 text-xs">
             <h4 className="font-bold text-slate-800 uppercase tracking-wider text-[11px]">
               Environment Variables Guide
             </h4>
@@ -188,10 +189,10 @@ DATABASE_URL="postgresql://user:pass@host:5432/dreamhome"`}
         </div>
 
         {/* Footer */}
-        <div className="px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+        <div className="px-4 py-3 sm:px-6 sm:py-4 bg-slate-50 border-t border-slate-200 flex justify-end shrink-0">
           <button
             onClick={onClose}
-            className="px-5 py-2 text-xs font-semibold bg-slate-900 text-white rounded-md hover:bg-slate-800 transition-colors"
+            className="w-full sm:w-auto px-5 py-2.5 sm:py-2 text-xs font-semibold bg-slate-900 text-white rounded-lg sm:rounded-md hover:bg-slate-800 transition-colors min-h-[44px] sm:min-h-0 cursor-pointer touch-manipulation text-center"
           >
             Close Diagnostics
           </button>
