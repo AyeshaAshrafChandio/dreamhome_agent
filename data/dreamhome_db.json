@@ -386,9 +386,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -420,22 +423,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 69,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($1,850,000 vs $750,000)."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -466,9 +465,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -500,22 +502,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $160,000, well within your $700,000 limit (saving $540,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -547,9 +545,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -581,19 +582,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $739,900, well within your $750,000 limit (saving $10,100).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -626,9 +624,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -660,22 +661,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 60,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 55,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Exceeds maximum budget by $99,999 (~14%).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -707,8 +704,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (CentralTexas)",
@@ -730,70 +731,28 @@
           "address": "2305 Barton Creek Blvd"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "St. Gabriel's Catholic School",
-            "distanceKm": 1.25,
-            "lat": 30.2923695,
-            "lng": -97.8745136,
-            "type": "School"
-          },
-          {
-            "name": "West Ridge Middle School",
-            "distanceKm": 2.67,
-            "lat": 30.3040395,
-            "lng": -97.8842879,
-            "type": "School"
-          },
-          {
-            "name": "Barton Creek Elementary School",
-            "distanceKm": 2.69,
-            "lat": 30.3072101,
-            "lng": -97.8813277,
-            "type": "School"
-          },
-          {
-            "name": "Regents School of Austin",
-            "distanceKm": 4.25,
-            "lat": 30.254625,
-            "lng": -97.8444993,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
-        "groceryStores": [
-          {
-            "name": "H-E-B",
-            "distanceKm": 3.54,
-            "lat": 30.2914772,
-            "lng": -97.8250431,
-            "type": "Supermarket"
-          }
-        ],
+        "groceryStores": [],
         "transit": [],
         "parks": [],
-        "walkabilityScore": 45,
-        "realDataSummary": "Within a 2 km radius: 4 school(s), 1 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 45,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "4 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($2,349,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -824,9 +783,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -848,77 +810,28 @@
           "address": "Escarpment Blvd"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "Bear Creek Elementary School",
-            "distanceKm": 0.9,
-            "lat": 30.1692072,
-            "lng": -97.9101655,
-            "type": "School"
-          },
-          {
-            "name": "Baldwin Elementary School",
-            "distanceKm": 1.79,
-            "lat": 30.1838639,
-            "lng": -97.9235713,
-            "type": "School"
-          },
-          {
-            "name": "Clayton Elementary School",
-            "distanceKm": 1.99,
-            "lat": 30.1946352,
-            "lng": -97.9067394,
-            "type": "School"
-          },
-          {
-            "name": "Bailey Middle School",
-            "distanceKm": 3.54,
-            "lat": 30.1653552,
-            "lng": -97.872505,
-            "type": "School"
-          },
-          {
-            "name": "Mills Elementary School",
-            "distanceKm": 4.66,
-            "lat": 30.2104678,
-            "lng": -97.8781425,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
-        "groceryStores": [
-          {
-            "name": "H-E-B",
-            "distanceKm": 4.09,
-            "lat": 30.2026482,
-            "lng": -97.8766087,
-            "type": "Supermarket"
-          }
-        ],
+        "groceryStores": [],
         "transit": [],
         "parks": [],
-        "walkabilityScore": 51,
-        "realDataSummary": "Within a 2 km radius: 5 school(s), 1 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 75,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $649,000, well within your $700,000 limit (saving $51,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "5 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -949,9 +862,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -973,69 +889,28 @@
           "address": "5808 Twin Peaks Trce"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "Bee Cave Middle School",
-            "distanceKm": 1.46,
-            "lat": 30.310975,
-            "lng": -97.9999923,
-            "type": "School"
-          },
-          {
-            "name": "Lake Travis Middle School",
-            "distanceKm": 2.93,
-            "lat": 30.3379405,
-            "lng": -98.0318623,
-            "type": "School"
-          },
-          {
-            "name": "Acton Academy Bee Cave",
-            "distanceKm": 3.63,
-            "lat": 30.3071586,
-            "lng": -97.9774384,
-            "type": "School"
-          },
-          {
-            "name": "Serene Hills Elementary School",
-            "distanceKm": 3.85,
-            "lat": 30.3482637,
-            "lng": -97.9965643,
-            "type": "School"
-          },
-          {
-            "name": "Lakeway Elementary School",
-            "distanceKm": 5.42,
-            "lat": 30.3529576,
-            "lng": -97.9756115,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
         "groceryStores": [],
         "transit": [],
         "parks": [],
         "walkabilityScore": 35,
-        "realDataSummary": "Within a 2 km radius: 5 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 75,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $499,000, well within your $700,000 limit (saving $201,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "5 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1067,9 +942,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1101,19 +979,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $459,000, well within your $750,000 limit (saving $291,000).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -1146,9 +1021,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1170,70 +1048,28 @@
           "address": "4747 Eck Ln"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "Hudson Bend Middle School",
-            "distanceKm": 2.7,
-            "lat": 30.3898631,
-            "lng": -97.9340792,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
         "groceryStores": [],
         "transit": [],
-        "parks": [
-          {
-            "name": "Mansfield Dam Park",
-            "distanceKm": 3.48,
-            "lat": 30.3963549,
-            "lng": -97.905821,
-            "type": "Park"
-          },
-          {
-            "name": "Bob Wentz Park",
-            "distanceKm": 3.76,
-            "lat": 30.4144138,
-            "lng": -97.896511,
-            "type": "Park"
-          },
-          {
-            "name": "Steichen Park",
-            "distanceKm": 3.83,
-            "lat": 30.4355416,
-            "lng": -97.9044559,
-            "type": "Park"
-          },
-          {
-            "name": "Fritz Hughes Park",
-            "distanceKm": 4.13,
-            "lat": 30.3827065,
-            "lng": -97.9126292,
-            "type": "Park"
-          }
-        ],
-        "walkabilityScore": 36,
-        "realDataSummary": "Within a 2 km radius: 1 school(s), 0 grocery store(s), 0 transit station(s), and 5 park(s) verified from OpenStreetMap.",
-        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 45,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "1 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($1,199,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1264,9 +1100,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1288,113 +1127,28 @@
           "address": "Old Lockhart Rd"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "Blazier Intermediate School",
-            "distanceKm": 1.42,
-            "lat": 30.1506279,
-            "lng": -97.7523387,
-            "type": "School"
-          },
-          {
-            "name": "Blazier Primary School",
-            "distanceKm": 1.98,
-            "lat": 30.1562661,
-            "lng": -97.7517128,
-            "type": "School"
-          },
-          {
-            "name": "Palm Elementary School",
-            "distanceKm": 3.22,
-            "lat": 30.1649072,
-            "lng": -97.7432817,
-            "type": "School"
-          },
-          {
-            "name": "Perez Elementary School",
-            "distanceKm": 3.39,
-            "lat": 30.1705736,
-            "lng": -97.7554179,
-            "type": "School"
-          },
-          {
-            "name": "Akins Early College High School",
-            "distanceKm": 3.83,
-            "lat": 30.1488414,
-            "lng": -97.8000378,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
-        "groceryStores": [
-          {
-            "name": "Walmart Supercenter",
-            "distanceKm": 3.91,
-            "lat": 30.1649084,
-            "lng": -97.790559,
-            "type": "Supermarket"
-          },
-          {
-            "name": "H-E-B",
-            "distanceKm": 4.01,
-            "lat": 30.1688265,
-            "lng": -97.7870891,
-            "type": "Supermarket"
-          }
-        ],
+        "groceryStores": [],
         "transit": [],
-        "parks": [
-          {
-            "name": "Goodnight Ranch Pocket Park",
-            "distanceKm": 1.82,
-            "lat": 30.1553163,
-            "lng": -97.7533156,
-            "type": "Park"
-          },
-          {
-            "name": "Ballybunion Park",
-            "distanceKm": 1.87,
-            "lat": 30.1338465,
-            "lng": -97.7792191,
-            "type": "Park"
-          },
-          {
-            "name": "Kendra Page Neighborhood Park",
-            "distanceKm": 4.43,
-            "lat": 30.1802203,
-            "lng": -97.764114,
-            "type": "Park"
-          },
-          {
-            "name": "Bryant Park",
-            "distanceKm": 4.57,
-            "lat": 30.1627403,
-            "lng": -97.7213478,
-            "type": "Park"
-          }
-        ],
-        "walkabilityScore": 87,
-        "realDataSummary": "Within a 2 km radius: 5 school(s), 2 grocery store(s), 0 transit station(s), and 5 park(s) verified from OpenStreetMap.",
-        "aiInterpretation": "AI Interpretation: Proximity to both educational institutions and parks indicates an environment suitable for family-oriented lifestyles."
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 45,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "5 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($2,500,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1426,9 +1180,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (SunCommunities)",
@@ -1458,19 +1215,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $105,000, well within your $750,000 limit (saving $645,000).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -1503,9 +1257,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1527,69 +1284,28 @@
           "address": "407 E Monroe St"
         },
         "radiusMeters": 2000,
-        "schools": [
-          {
-            "name": "Travis Heights Elementary School",
-            "distanceKm": 0.59,
-            "lat": 30.2413239,
-            "lng": -97.7460822,
-            "type": "School"
-          },
-          {
-            "name": "Austin High School",
-            "distanceKm": 3.51,
-            "lat": 30.2729495,
-            "lng": -97.7669279,
-            "type": "School"
-          },
-          {
-            "name": "Mathews Elementary School",
-            "distanceKm": 3.78,
-            "lat": 30.2782857,
-            "lng": -97.761056,
-            "type": "School"
-          },
-          {
-            "name": "Garza Independence High School",
-            "distanceKm": 4.22,
-            "lat": 30.2773456,
-            "lng": -97.7212059,
-            "type": "School"
-          },
-          {
-            "name": "Campbell Elementary School",
-            "distanceKm": 5.11,
-            "lat": 30.2824529,
-            "lng": -97.7136057,
-            "type": "School"
-          }
-        ],
+        "schools": [],
         "hospitals": [],
         "groceryStores": [],
         "transit": [],
         "parks": [],
         "walkabilityScore": 35,
-        "realDataSummary": "Within a 2 km radius: 5 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 52,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 25,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
-          "neighborhoodFit": 95
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
+          "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking.",
-          "5 school(s) located within 2 km."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Significantly above budget by $155,000.",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1622,7 +1338,11 @@
       ],
       "photos": [
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1654,22 +1374,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $419,900, well within your $700,000 limit (saving $280,100).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1701,9 +1417,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1735,22 +1454,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 44,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($1,750,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1782,9 +1497,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1816,22 +1534,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $599,900, well within your $700,000 limit (saving $100,100).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1862,9 +1576,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1896,22 +1613,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $99,000, well within your $700,000 limit (saving $601,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -1943,9 +1656,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -1977,19 +1693,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $565,998, well within your $750,000 limit (saving $184,002).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -2023,9 +1736,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2057,19 +1773,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $567,998, well within your $750,000 limit (saving $182,002).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -2103,9 +1816,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1598228723793-52759bba239c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2137,19 +1853,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $499,998, well within your $750,000 limit (saving $250,002).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -2182,9 +1895,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2216,22 +1932,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $499,000, well within your $700,000 limit (saving $201,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -2263,9 +1975,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2296,19 +2011,16 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 99,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $649,999, well within your $750,000 limit (saving $100,001).",
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
         "tradeoffs": []
       }
@@ -2342,9 +2054,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2376,22 +2091,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 44,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($1,299,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -2423,9 +2134,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584738766473-61c083514bf4?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2457,22 +2171,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 44,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($1,175,000 vs $700,000).",
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -2505,7 +2215,11 @@
       ],
       "photos": [
         "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2529,95 +2243,26 @@
         "radiusMeters": 2000,
         "schools": [],
         "hospitals": [],
-        "groceryStores": [
-          {
-            "name": "Wheatsville Food Co-op",
-            "distanceKm": 3.08,
-            "lat": 30.2976328,
-            "lng": -97.7410501,
-            "type": "Supermarket"
-          },
-          {
-            "name": "H-E-B",
-            "distanceKm": 3.72,
-            "lat": 30.2387456,
-            "lng": -97.7546883,
-            "type": "Supermarket"
-          },
-          {
-            "name": "H-E-B plus!",
-            "distanceKm": 4.12,
-            "lat": 30.2365912,
-            "lng": -97.7221483,
-            "type": "Supermarket"
-          },
-          {
-            "name": "Central Market - H-E-B",
-            "distanceKm": 4.15,
-            "lat": 30.3073131,
-            "lng": -97.7397416,
-            "type": "Supermarket"
-          },
-          {
-            "name": "Randalls 2471",
-            "distanceKm": 4.4,
-            "lat": 30.3041273,
-            "lng": -97.7639485,
-            "type": "Supermarket"
-          }
-        ],
+        "groceryStores": [],
         "transit": [],
-        "parks": [
-          {
-            "name": "West Austin Neighborhood Park",
-            "distanceKm": 1.77,
-            "lat": 30.2767228,
-            "lng": -97.7575106,
-            "type": "Park"
-          },
-          {
-            "name": "Eilers Neighborhood Park",
-            "distanceKm": 3.14,
-            "lat": 30.2763052,
-            "lng": -97.7727585,
-            "type": "Park"
-          },
-          {
-            "name": "The Denizen Park",
-            "distanceKm": 4.43,
-            "lat": 30.2377109,
-            "lng": -97.7679374,
-            "type": "Park"
-          },
-          {
-            "name": "Tom Lasseter-South Lamar Neighborhood Park",
-            "distanceKm": 4.83,
-            "lat": 30.2416244,
-            "lng": -97.7789116,
-            "type": "Park"
-          }
-        ],
-        "walkabilityScore": 75,
-        "realDataSummary": "Within a 2 km radius: 0 school(s), 5 grocery store(s), 0 transit station(s), and 5 park(s) verified from OpenStreetMap.",
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 74,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 100,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 0,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Priced at $360,000, well within your $700,000 limit (saving $340,000).",
-          "Direct match for your preferred area in Travis.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Architectural style is Contemporary instead of Modern."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -2649,8 +2294,12 @@
         "air_conditioning"
       ],
       "photos": [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?auto=format&fit=crop&w=1200&q=80"
       ],
       "source": {
         "providerName": "MLS (UnlockMLS)",
@@ -2682,22 +2331,18 @@
         "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
       },
       "matchScore": {
-        "overall": 69,
+        "overall": 93,
         "breakdown": {
-          "budgetFit": 0,
+          "budgetFit": 90,
           "locationFit": 100,
-          "requirementsFit": 100,
-          "amenitiesFit": 100,
+          "requirementsFit": 95,
+          "amenitiesFit": 90,
           "neighborhoodFit": 85
         },
         "reasons": [
-          "Direct match for your preferred area in Travis.",
-          "3 bedrooms satisfies your minimum requirement of 3.",
-          "Includes desired feature: parking."
+          "Direct match for your preferred area in Travis."
         ],
-        "tradeoffs": [
-          "Extremely over budget ($7,775,000 vs $750,000)."
-        ]
+        "tradeoffs": []
       }
     },
     {
@@ -3976,6 +3621,1907 @@
         ],
         "tradeoffs": []
       }
+    },
+    {
+      "id": "1423-Berene-Ave,-Austin,-TX-78721",
+      "title": "1423 Berene Ave, Austin, TX 78721",
+      "description": "Real estate listing located at 1423 Berene Ave, Austin, TX 78721. Features 4 bedrooms, 2 bathrooms, and 1,601 sq ft of living space. MLS ID: 1353321.",
+      "price": 299500,
+      "currency": "$",
+      "location": {
+        "address": "1423 Berene Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78721",
+        "country": "US",
+        "lat": 30.281653,
+        "lng": -97.682943,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "areaSqFt": 1601,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1955,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1353321",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.360Z"
+      },
+      "seller": {
+        "name": "Bill Friedrich",
+        "type": "agent",
+        "phone": "5125172961",
+        "email": "billf92@gmail.com",
+        "company": "Heart Of Texas, Realtor"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.281653,
+          "lng": -97.682943,
+          "address": "1423 Berene Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [
+          {
+            "name": "H-E-B",
+            "distanceKm": 3.09,
+            "lat": 30.3008578,
+            "lng": -97.6985507,
+            "type": "Supermarket"
+          },
+          {
+            "name": "La Canasta Supermarket",
+            "distanceKm": 3.27,
+            "lat": 30.3050991,
+            "lng": -97.6814773,
+            "type": "Supermarket"
+          },
+          {
+            "name": "H-E-B plus!",
+            "distanceKm": 5.66,
+            "lat": 30.2365912,
+            "lng": -97.7221483,
+            "type": "Supermarket"
+          }
+        ],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 3 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $299,500, well within your $750,000 limit (saving $450,500).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "15502-Enid-Dr,-Austin,-TX-78734",
+      "title": "15502 Enid Dr, Austin, TX 78734",
+      "description": "Real estate listing located at 15502 Enid Dr, Austin, TX 78734. Features 4 bedrooms, 5 bathrooms, and 3,734 sq ft of living space. MLS ID: 32100031.",
+      "price": 684999,
+      "currency": "$",
+      "location": {
+        "address": "15502 Enid Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78734",
+        "country": "US",
+        "lat": 30.413918,
+        "lng": -97.920381,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "areaSqFt": 3734,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2003,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (Houston)",
+        "listingId": "32100031",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:00.360Z"
+      },
+      "seller": {
+        "name": "Chet Polniazek",
+        "type": "agent",
+        "phone": "7138711600",
+        "email": "texas1st@sbcglobal.net",
+        "company": "1St Texas Realty Services"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.413918,
+          "lng": -97.920381,
+          "address": "15502 Enid Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $684,999, well within your $750,000 limit (saving $65,001).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "7321-Annette-Cv,-Austin,-TX-78724",
+      "title": "7321 Annette Cv, Austin, TX 78724",
+      "description": "Real estate listing located at 7321 Annette Cv, Austin, TX 78724. Features 4 bedrooms, 3.5 bathrooms, and 2,732 sq ft of living space. MLS ID: 9366108.",
+      "price": 728900,
+      "currency": "$",
+      "location": {
+        "address": "7321 Annette Cv",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78724",
+        "country": "US",
+        "lat": 30.285131,
+        "lng": -97.645398,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 2732,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2025,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "9366108",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:49.388Z"
+      },
+      "seller": {
+        "name": "Sarah Mcaloon",
+        "type": "agent",
+        "phone": "5127917776",
+        "email": "sarah.mcaloon@compass.com",
+        "company": "Compass RE Texas"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.285131,
+          "lng": -97.645398,
+          "address": "7321 Annette Cv"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $728,900, well within your $750,000 limit (saving $21,100).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "2918-Ranch-Rd,-620-N-Unit-L177,-Austin,-TX-78734",
+      "title": "2918 Ranch Rd, 620 N Unit L177, Austin, TX 78734",
+      "description": "Real estate listing located at 2918 Ranch Rd, 620 N Unit L177, Austin, TX 78734. Features 4 bedrooms, 3.5 bathrooms, and 2,714 sq ft of living space. MLS ID: 3007719.",
+      "price": 930000,
+      "currency": "$",
+      "location": {
+        "address": "2918 Ranch Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78734",
+        "country": "US",
+        "lat": 30.392832,
+        "lng": -97.937759,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 2714,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 1997,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3007719",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.363Z"
+      },
+      "seller": {
+        "name": "Claudia Verastegui",
+        "type": "agent",
+        "phone": "7138176985",
+        "email": "claudia@cbunited.com",
+        "company": "Coldwell Banker Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.392832,
+          "lng": -97.937759,
+          "address": "2918 Ranch Rd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 64,
+        "breakdown": {
+          "budgetFit": 25,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Significantly above budget by $180,000.",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6508-Madrone-Tree-Ln,-Austin,-TX-78738",
+      "title": "6508 Madrone Tree Ln, Austin, TX 78738",
+      "description": "Real estate listing located at 6508 Madrone Tree Ln, Austin, TX 78738. Features 4 bedrooms, 4.5 bathrooms, and 3,843 sq ft of living space. MLS ID: 4243882.",
+      "price": 420000,
+      "currency": "$",
+      "location": {
+        "address": "6508 Madrone Tree Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.31259,
+        "lng": -98.013145,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 3843,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2027,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "4243882",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.358Z"
+      },
+      "seller": {
+        "name": "Doug Clark",
+        "type": "agent",
+        "phone": "5127512099",
+        "email": "clark@epprighthomes.com",
+        "company": "Clark REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.31259,
+          "lng": -98.013145,
+          "address": "6508 Madrone Tree Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $420,000, well within your $750,000 limit (saving $330,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6105-Dusk-Light-Cv,-Austin,-TX-78738",
+      "title": "6105 Dusk Light Cv, Austin, TX 78738",
+      "description": "Real estate listing located at 6105 Dusk Light Cv, Austin, TX 78738. Features 4 bedrooms, 4.5 bathrooms, and 3,569 sq ft of living space. MLS ID: 1424196.",
+      "price": 420000,
+      "currency": "$",
+      "location": {
+        "address": "6105 Dusk Light Cv",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.311434,
+        "lng": -98.015228,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 3569,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2027,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1424196",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.352Z"
+      },
+      "seller": {
+        "name": "Doug Clark",
+        "type": "agent",
+        "phone": "5127512099",
+        "email": "clark@epprighthomes.com",
+        "company": "Clark REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.311434,
+          "lng": -98.015228,
+          "address": "6105 Dusk Light Cv"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $420,000, well within your $750,000 limit (saving $330,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "8910-Wildridge-Dr,-Austin,-TX-78759",
+      "title": "8910 Wildridge Dr, Austin, TX 78759",
+      "description": "Real estate listing located at 8910 Wildridge Dr, Austin, TX 78759. Features 4 bedrooms, 4.5 bathrooms, and 3,930 sq ft of living space. MLS ID: 2771369.",
+      "price": 2200000,
+      "currency": "$",
+      "location": {
+        "address": "8910 Wildridge Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78759",
+        "country": "US",
+        "lat": 30.386027,
+        "lng": -97.751611,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 3930,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1971,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "2771369",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.351Z"
+      },
+      "seller": {
+        "name": "Jason Brian",
+        "type": "agent",
+        "phone": "5125604549",
+        "email": "512realpro@gmail.com",
+        "company": "Austin Livin LLC"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.386027,
+          "lng": -97.751611,
+          "address": "8910 Wildridge Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 56,
+        "breakdown": {
+          "budgetFit": 0,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Extremely over budget ($2,200,000 vs $750,000).",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6513-Madrone-Tree-Ln,-Austin,-TX-78738",
+      "title": "6513 Madrone Tree Ln, Austin, TX 78738",
+      "description": "Real estate listing located at 6513 Madrone Tree Ln, Austin, TX 78738. Features 4 bedrooms, 4.5 bathrooms, and 3,910 sq ft of living space. MLS ID: 7248850.",
+      "price": 400000,
+      "currency": "$",
+      "location": {
+        "address": "6513 Madrone Tree Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.312613,
+        "lng": -98.01225,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 3910,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2027,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "7248850",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.348Z"
+      },
+      "seller": {
+        "name": "Doug Clark",
+        "type": "agent",
+        "phone": "5127512099",
+        "email": "clark@epprighthomes.com",
+        "company": "Clark REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.312613,
+          "lng": -98.01225,
+          "address": "6513 Madrone Tree Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $400,000, well within your $750,000 limit (saving $350,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6321-Madrone-Tree-Ln,-Austin,-TX-78738",
+      "title": "6321 Madrone Tree Ln, Austin, TX 78738",
+      "description": "Real estate listing located at 6321 Madrone Tree Ln, Austin, TX 78738. Features 4 bedrooms, 4.5 bathrooms, and 3,532 sq ft of living space. MLS ID: 1844156.",
+      "price": 375000,
+      "currency": "$",
+      "location": {
+        "address": "6321 Madrone Tree Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.312922,
+        "lng": -98.015112,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 3532,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2027,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1844156",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.345Z"
+      },
+      "seller": {
+        "name": "Doug Clark",
+        "type": "agent",
+        "phone": "5127512099",
+        "email": "clark@epprighthomes.com",
+        "company": "Clark REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.312922,
+          "lng": -98.015112,
+          "address": "6321 Madrone Tree Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $375,000, well within your $750,000 limit (saving $375,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "17205-Morning-Grove-Ln,-Austin,-TX-78738",
+      "title": "17205 Morning Grove Ln, Austin, TX 78738",
+      "description": "Real estate listing located at 17205 Morning Grove Ln, Austin, TX 78738. Features 4 bedrooms, 4.5 bathrooms, and 4,422 sq ft of living space. MLS ID: 5472064.",
+      "price": 420000,
+      "currency": "$",
+      "location": {
+        "address": "17205 Morning Grove Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78738",
+        "country": "US",
+        "lat": 30.314905,
+        "lng": -98.015404,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4.5,
+      "areaSqFt": 4422,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2027,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "5472064",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.342Z"
+      },
+      "seller": {
+        "name": "Doug Clark",
+        "type": "agent",
+        "phone": "5127512099",
+        "email": "clark@epprighthomes.com",
+        "company": "Clark REALTORS"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.314905,
+          "lng": -98.015404,
+          "address": "17205 Morning Grove Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $420,000, well within your $750,000 limit (saving $330,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "7601-Daffan-Ln,-Trlr-263,-Austin,-TX-78724",
+      "title": "7601 Daffan Ln, Trlr 263, Austin, TX 78724",
+      "description": "Real estate listing located at 7601 Daffan Ln, Trlr 263, Austin, TX 78724. Features 4 bedrooms, 3 bathrooms, and 2,160 sq ft of living space. MLS ID: 30973.",
+      "price": 159995,
+      "currency": "$",
+      "location": {
+        "address": "7601 Daffan Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78724",
+        "country": "US",
+        "lat": 30.314307,
+        "lng": -97.623553,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 2160,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2022,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (SunCommunities)",
+        "listingId": "30973",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.339Z"
+      },
+      "seller": {
+        "name": "Licensed Listing Broker",
+        "type": "agent",
+        "company": "Oak Crest"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.314307,
+          "lng": -97.623553,
+          "address": "7601 Daffan Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $159,995, well within your $750,000 limit (saving $590,005).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "1106-Lott-Ave,-Austin,-TX-78721",
+      "title": "1106 Lott Ave, Austin, TX 78721",
+      "description": "Real estate listing located at 1106 Lott Ave, Austin, TX 78721. Features 4 bedrooms, 3.5 bathrooms, and 2,580 sq ft of living space. MLS ID: 3235259.",
+      "price": 677000,
+      "currency": "$",
+      "location": {
+        "address": "1106 Lott Ave",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78721",
+        "country": "US",
+        "lat": 30.271679,
+        "lng": -97.682755,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 2580,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3235259",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:05.323Z"
+      },
+      "seller": {
+        "name": "Mark Strub",
+        "type": "agent",
+        "phone": "5129228992",
+        "email": "mark@strub.us",
+        "company": "Strub Residential"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.271679,
+          "lng": -97.682755,
+          "address": "1106 Lott Ave"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $677,000, well within your $750,000 limit (saving $73,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6807-Trendal-Ln,-Austin,-TX-78744",
+      "title": "6807 Trendal Ln, Austin, TX 78744",
+      "description": "Real estate listing located at 6807 Trendal Ln, Austin, TX 78744. Features 4 bedrooms, 2 bathrooms, and 1,516 sq ft of living space. MLS ID: 1855689.",
+      "price": 315000,
+      "currency": "$",
+      "location": {
+        "address": "6807 Trendal Ln",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78744",
+        "country": "US",
+        "lat": 30.181712,
+        "lng": -97.760546,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "areaSqFt": 1516,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1984,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1855689",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:00.373Z"
+      },
+      "seller": {
+        "name": "Nicolas Atwood",
+        "type": "agent",
+        "phone": "5122704765",
+        "email": "natwood@theeraexperts.com",
+        "company": "ERA Experts"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.181712,
+          "lng": -97.760546,
+          "address": "6807 Trendal Ln"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $315,000, well within your $750,000 limit (saving $435,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "6033-Mount-Bonnell-Cv,-Austin,-TX-78731",
+      "title": "6033 Mount Bonnell Cv, Austin, TX 78731",
+      "description": "Real estate listing located at 6033 Mount Bonnell Cv, Austin, TX 78731. Features 4 bedrooms, 3 bathrooms, and 3,207 sq ft of living space. MLS ID: 1261634.",
+      "price": 998000,
+      "currency": "$",
+      "location": {
+        "address": "6033 Mount Bonnell Cv",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78731",
+        "country": "US",
+        "lat": 30.348742,
+        "lng": -97.778684,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 3207,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1976,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1261634",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:35:00.175Z"
+      },
+      "seller": {
+        "name": "Vanessa Sinclair",
+        "type": "agent",
+        "phone": "5129980541",
+        "email": "vanessasinclair@realtyaustin.com",
+        "company": "Compass RE Texas"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.348742,
+          "lng": -97.778684,
+          "address": "6033 Mount Bonnell Cv"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 56,
+        "breakdown": {
+          "budgetFit": 0,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Extremely over budget ($998,000 vs $750,000).",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "7500-Shadowridge-Run,-Unit-34,-Austin,-TX-78749",
+      "title": "7500 Shadowridge Run, Unit 34, Austin, TX 78749",
+      "description": "Real estate listing located at 7500 Shadowridge Run, Unit 34, Austin, TX 78749. Features 4 bedrooms, 3 bathrooms, and 2,313 sq ft of living space. MLS ID: 1676861.",
+      "price": 449000,
+      "currency": "$",
+      "location": {
+        "address": "7500 Shadowridge Run",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78749",
+        "country": "US",
+        "lat": 30.226376,
+        "lng": -97.874678,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 2313,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 2001,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1676861",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.492Z"
+      },
+      "seller": {
+        "name": "Rudy Vincent",
+        "type": "agent",
+        "phone": "5124269936",
+        "email": "rvincent@cbunited.com",
+        "company": "Coldwell Banker Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.226376,
+          "lng": -97.874678,
+          "address": "7500 Shadowridge Run"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $449,000, well within your $750,000 limit (saving $301,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "2104-E-2nd-St,-Unit-1,-Austin,-TX-78702",
+      "title": "2104 E 2nd St, Unit 1, Austin, TX 78702",
+      "description": "Real estate listing located at 2104 E 2nd St, Unit 1, Austin, TX 78702. Features 4 bedrooms, 3.5 bathrooms, and 2,089 sq ft of living space. MLS ID: 3451479.",
+      "price": 1150000,
+      "currency": "$",
+      "location": {
+        "address": "2104 E 2nd St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78702",
+        "country": "US",
+        "lat": 30.257022,
+        "lng": -97.720777,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 2089,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2022,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3451479",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.490Z"
+      },
+      "seller": {
+        "name": "Alex Mccormick",
+        "type": "agent",
+        "phone": "5127624397",
+        "email": "a.mccormick2000@gmail.com",
+        "company": "Keller Williams Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.257022,
+          "lng": -97.720777,
+          "address": "2104 E 2nd St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 56,
+        "breakdown": {
+          "budgetFit": 0,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Extremely over budget ($1,150,000 vs $750,000).",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "5507-Burgundy-Dr,-Austin,-TX-78724",
+      "title": "5507 Burgundy Dr, Austin, TX 78724",
+      "description": "Real estate listing located at 5507 Burgundy Dr, Austin, TX 78724. Features 4 bedrooms, 2 bathrooms, and 1,428 sq ft of living space. MLS ID: 6796442.",
+      "price": 285000,
+      "currency": "$",
+      "location": {
+        "address": "5507 Burgundy Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78724",
+        "country": "US",
+        "lat": 30.314054,
+        "lng": -97.653496,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "areaSqFt": 1428,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1980,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "6796442",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.480Z"
+      },
+      "seller": {
+        "name": "Nicki Turner",
+        "type": "agent",
+        "phone": "5633437193",
+        "email": "nturner@bhhstx.com",
+        "company": "Berkshire Hathaway HomeServices Texas Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.314054,
+          "lng": -97.653496,
+          "address": "5507 Burgundy Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $285,000, well within your $750,000 limit (saving $465,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "2305-Barton-Creek-Blvd,-Unit-20,-Austin,-TX-78735",
+      "title": "2305 Barton Creek Blvd, Unit 20, Austin, TX 78735",
+      "description": "Real estate listing located at 2305 Barton Creek Blvd, Unit 20, Austin, TX 78735. Features 4 bedrooms, 4 bathrooms, and 3,772 sq ft of living space. MLS ID: 3654650.",
+      "price": 2150000,
+      "currency": "$",
+      "location": {
+        "address": "2305 Barton Creek Blvd",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78735",
+        "country": "US",
+        "lat": 30.289722,
+        "lng": -97.861903,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "areaSqFt": 3772,
+      "propertyType": "condo",
+      "architecturalStyle": "Contemporary",
+      "floors": 1,
+      "yearBuilt": 1998,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "3654650",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.456Z"
+      },
+      "seller": {
+        "name": "Diane Dillard",
+        "type": "agent",
+        "phone": "5123274800",
+        "email": "diane.dillard@kupersir.com",
+        "company": "Douglas Elliman Real Estate"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.289722,
+          "lng": -97.861903,
+          "address": "2305 Barton Creek Blvd"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 56,
+        "breakdown": {
+          "budgetFit": 0,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Extremely over budget ($2,150,000 vs $750,000).",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "4616-Crestway-Dr,-Austin,-TX-78731",
+      "title": "4616 Crestway Dr, Austin, TX 78731",
+      "description": "Real estate listing located at 4616 Crestway Dr, Austin, TX 78731. Features 4 bedrooms, 3.5 bathrooms, and 4,730 sq ft of living space. MLS ID: 7052334.",
+      "price": 2500000,
+      "currency": "$",
+      "location": {
+        "address": "4616 Crestway Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78731",
+        "country": "US",
+        "lat": 30.330664,
+        "lng": -97.767293,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3.5,
+      "areaSqFt": 4730,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1957,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "7052334",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.450Z"
+      },
+      "seller": {
+        "name": "Bridget Ramey",
+        "type": "agent",
+        "phone": "5128316577",
+        "email": "bridget.ramey@kupersir.com",
+        "company": "Kuper Sotheby's International Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.330664,
+          "lng": -97.767293,
+          "address": "4616 Crestway Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 56,
+        "breakdown": {
+          "budgetFit": 0,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Extremely over budget ($2,500,000 vs $750,000).",
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "10913-Long-Summer-Dr,-Austin,-TX-78754",
+      "title": "10913 Long Summer Dr, Austin, TX 78754",
+      "description": "Real estate listing located at 10913 Long Summer Dr, Austin, TX 78754. Features 4 bedrooms, 2 bathrooms, and 1,801 sq ft of living space. MLS ID: 5102138.",
+      "price": 339000,
+      "currency": "$",
+      "location": {
+        "address": "10913 Long Summer Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78754",
+        "country": "US",
+        "lat": 30.357577,
+        "lng": -97.64151,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "areaSqFt": 1801,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2006,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "5102138",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:54.429Z"
+      },
+      "seller": {
+        "name": "Melissa Alcocer",
+        "type": "agent",
+        "phone": "5126801590",
+        "company": "Horizon Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.357577,
+          "lng": -97.64151,
+          "address": "10913 Long Summer Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $339,000, well within your $750,000 limit (saving $411,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "8515-Dongan-Dr,-Austin,-TX-78744",
+      "title": "8515 Dongan Dr, Austin, TX 78744",
+      "description": "Real estate listing located at 8515 Dongan Dr, Austin, TX 78744. Features 4 bedrooms, 3 bathrooms, and 2,231 sq ft of living space. MLS ID: 4688304.",
+      "price": 499990,
+      "currency": "$",
+      "location": {
+        "address": "8515 Dongan Dr",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78744",
+        "country": "US",
+        "lat": 30.140715,
+        "lng": -97.7141,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 2231,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 2025,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "4688304",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:49.393Z"
+      },
+      "seller": {
+        "name": "Ryan Matthews",
+        "type": "agent",
+        "phone": "7374441101",
+        "email": "newmarkmls@gmail.com",
+        "company": "Ryan Matthews"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.140715,
+          "lng": -97.7141,
+          "address": "8515 Dongan Dr"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $499,990, well within your $750,000 limit (saving $250,010).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "4104-Seldalia-Trl,-Austin,-TX-78732",
+      "title": "4104 Seldalia Trl, Austin, TX 78732",
+      "description": "Real estate listing located at 4104 Seldalia Trl, Austin, TX 78732. Features 4 bedrooms, 2.5 bathrooms, and 2,892 sq ft of living space. MLS ID: 8712057.",
+      "price": 659000,
+      "currency": "$",
+      "location": {
+        "address": "4104 Seldalia Trl",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78732",
+        "country": "US",
+        "lat": 30.382321,
+        "lng": -97.889608,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "areaSqFt": 2892,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1999,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "8712057",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:49.389Z"
+      },
+      "seller": {
+        "name": "Diana Bruttell",
+        "type": "agent",
+        "phone": "8327669872",
+        "email": "dlbruttell@gmail.com",
+        "company": "Real Broker, LLC"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.382321,
+          "lng": -97.889608,
+          "address": "4104 Seldalia Trl"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $659,000, well within your $750,000 limit (saving $91,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
+    },
+    {
+      "id": "2103-E-12th-St,-Austin,-TX-78702",
+      "title": "2103 E 12th St, Austin, TX 78702",
+      "description": "Real estate listing located at 2103 E 12th St, Austin, TX 78702. Features 4 bedrooms, 3 bathrooms, and 1,392 sq ft of living space. MLS ID: 1225763.",
+      "price": 499000,
+      "currency": "$",
+      "location": {
+        "address": "2103 E 12th St",
+        "city": "Austin",
+        "state": "TX",
+        "zipCode": "78702",
+        "country": "US",
+        "lat": 30.273856,
+        "lng": -97.717557,
+        "neighborhood": "Travis"
+      },
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "areaSqFt": 1392,
+      "propertyType": "single_family",
+      "architecturalStyle": "Contemporary",
+      "floors": 2,
+      "yearBuilt": 1922,
+      "features": [
+        "parking",
+        "central_heating",
+        "air_conditioning"
+      ],
+      "photos": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+      ],
+      "source": {
+        "providerName": "MLS (UnlockMLS)",
+        "listingId": "1225763",
+        "sourceUrl": "https://rentcast.io",
+        "lastUpdated": "2026-09-03T12:34:49.368Z"
+      },
+      "seller": {
+        "name": "Adam Theall",
+        "type": "agent",
+        "phone": "5123630955",
+        "email": "adamart360@gmail.com",
+        "company": "Pauly Presley Realty"
+      },
+      "neighborhood": {
+        "location": {
+          "lat": 30.273856,
+          "lng": -97.717557,
+          "address": "2103 E 12th St"
+        },
+        "radiusMeters": 2000,
+        "schools": [],
+        "hospitals": [],
+        "groceryStores": [],
+        "transit": [],
+        "parks": [],
+        "walkabilityScore": 35,
+        "realDataSummary": "Within a 2 km radius: 0 school(s), 0 grocery store(s), 0 transit station(s), and 0 park(s) verified from OpenStreetMap.",
+        "aiInterpretation": "AI Interpretation: Lower density of commercial transit points may appeal to buyers prioritizing peaceful, suburban seclusion."
+      },
+      "matchScore": {
+        "overall": 86,
+        "breakdown": {
+          "budgetFit": 100,
+          "locationFit": 100,
+          "requirementsFit": 50,
+          "amenitiesFit": 100,
+          "neighborhoodFit": 85
+        },
+        "reasons": [
+          "Priced at $499,000, well within your $750,000 limit (saving $251,000).",
+          "Direct match for your preferred area in Travis.",
+          "4 bedrooms satisfies your minimum requirement of 4.",
+          "Includes desired feature: parking."
+        ],
+        "tradeoffs": [
+          "Architectural style is Contemporary instead of modern."
+        ]
+      }
     }
   ],
   "savedProperties": [
@@ -3992,6 +5538,12 @@
       "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
       "notes": "Dream yard",
       "createdAt": "2026-09-03T16:30:16.235Z"
+    },
+    {
+      "id": "sp_1788469898649_e5lfi",
+      "userId": "user_default_buyer",
+      "propertyId": "1423-Berene-Ave,-Austin,-TX-78721",
+      "createdAt": "2026-09-03T21:11:38.649Z"
     }
   ],
   "viewingRequests": [
@@ -4236,10 +5788,296 @@
           "sentAt": "2026-09-03T17:32:45.011Z"
         }
       ]
+    },
+    {
+      "userId": "user_default_buyer",
+      "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+      "propertyTitle": "11248 Tom Sassman Rd, Austin, TX 78747",
+      "propertyPrice": 1850000,
+      "actionName": "Contact Seller",
+      "recipient": "Gary Steele",
+      "sellerName": "Gary Steele",
+      "sellerCompany": "Keller Williams Realty",
+      "sellerPhone": "5124269800",
+      "sellerEmail": "gary@steeleactionteam.com",
+      "mlsId": "1051969",
+      "providerName": "MLS (UnlockMLS)",
+      "message": "Hello, I am interested in 11248 Tom Sassman Rd, Austin, TX 78747. Could you please share more information regarding availability and utility costs?",
+      "id": "sc_1788469764268_21733",
+      "requiresApproval": true,
+      "approvalStatus": "approved",
+      "deliveryStatus": "delivered",
+      "createdAt": "2026-09-03T21:09:24.268Z",
+      "dispatchedAt": "2026-09-03T21:09:27.060Z",
+      "agentReply": {
+        "from": "Gary Steele",
+        "company": "Keller Williams Realty",
+        "text": "Thank you for your inquiry on 11248 Tom Sassman Rd, Austin, TX 78747 (MLS #1051969). I have received your request regarding property availability, disclosures, and utilities. I will review with the seller and follow up promptly. Feel free to call my direct broker line at (512) 426-9800 or reply here.",
+        "receivedAt": "2026-09-03T21:09:28.260Z",
+        "status": "Delivered to Broker CRM"
+      }
     }
   ],
   "agentActions": [],
   "webmcpToolLogs": [
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788470421390_bkshh",
+      "timestamp": "2026-09-03T21:20:21.390Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788470404389_4s2tk",
+      "timestamp": "2026-09-03T21:20:04.389Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788470397436_b2lrw",
+      "timestamp": "2026-09-03T21:19:57.436Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788470388901_6s1vr",
+      "timestamp": "2026-09-03T21:19:48.901Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "save_property",
+      "input": {
+        "propertyId": "1423-Berene-Ave,-Austin,-TX-78721"
+      },
+      "outputSummary": "Property 1423-Berene-Ave,-Austin,-TX-78721 saved to user profile.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469898651_ad9s9",
+      "timestamp": "2026-09-03T21:11:38.651Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBudget": null,
+        "minBedrooms": 4,
+        "minArea": null,
+        "features": [
+          "parking"
+        ],
+        "architecturalStyle": "modern",
+        "quietNeighborhood": false,
+        "schoolProximity": true,
+        "transitProximity": false
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469884153_3zu0y",
+      "timestamp": "2026-09-03T21:11:24.153Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 700000,
+        "minBudget": null,
+        "minBedrooms": 4,
+        "propertyType": "single_family",
+        "minArea": null,
+        "features": [
+          "parking"
+        ],
+        "architecturalStyle": "modern",
+        "quietNeighborhood": false,
+        "schoolProximity": true,
+        "transitProximity": false
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469876605_d7ph1",
+      "timestamp": "2026-09-03T21:11:16.605Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "contact_seller",
+      "input": {
+        "contactId": "sc_1788469764268_21733"
+      },
+      "outputSummary": "Human approved contact to Gary Steele. Message officially dispatched.",
+      "success": true,
+      "approvalStatus": "approved",
+      "id": "log_1788469767061_v9im8",
+      "timestamp": "2026-09-03T21:09:27.061Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "contact_seller",
+      "input": {
+        "propertyId": "11248-Tom-Sassman-Rd,-Austin,-TX-78747",
+        "message": "Hello, I am interested in 11248 Tom Sassman Rd, Austin, TX 78747. Could you please share more information regarding availability and utility costs?"
+      },
+      "outputSummary": "Drafted message to seller Gary Steele. Pausing for explicit human approval.",
+      "success": true,
+      "approvalStatus": "pending",
+      "id": "log_1788469764269_zif3l",
+      "timestamp": "2026-09-03T21:09:24.269Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469719413_izv8m",
+      "timestamp": "2026-09-03T21:08:39.413Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469719129_3lk8b",
+      "timestamp": "2026-09-03T21:08:39.129Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469683642_owlkl",
+      "timestamp": "2026-09-03T21:08:03.642Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX"
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788469628618_jdno4",
+      "timestamp": "2026-09-03T21:07:08.618Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788468768061_et0ie",
+      "timestamp": "2026-09-03T20:52:48.061Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788468767836_caxp1",
+      "timestamp": "2026-09-03T20:52:47.836Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788466342558_ebv7o",
+      "timestamp": "2026-09-03T20:12:22.558Z"
+    },
+    {
+      "userId": "user_default_buyer",
+      "toolName": "search_homes",
+      "input": {
+        "location": "Austin, TX",
+        "maxBudget": 750000,
+        "minBedrooms": 3,
+        "features": [
+          "parking"
+        ]
+      },
+      "outputSummary": "Found 25 properties in Austin, TX.",
+      "success": true,
+      "approvalStatus": "not_required",
+      "id": "log_1788466342398_vdsnm",
+      "timestamp": "2026-09-03T20:12:22.398Z"
+    },
     {
       "userId": "user_default_buyer",
       "toolName": "contact_seller",

@@ -219,18 +219,49 @@ export interface AgentActionLog {
   timestamp: string;
 }
 
-export interface WebMCPToolDefinition {
+export interface WebMCPToolAnnotations {
+  readOnlyHint?: boolean;
+  untrustedContentHint?: boolean;
+  [key: string]: any;
+}
+
+export interface RegisteredTool {
   name: string;
+  title?: string;
   description: string;
   inputSchema: {
     type: 'object';
     properties: Record<string, any>;
     required?: string[];
+    [key: string]: any;
   };
+  outputSchema?: Record<string, any>;
+  annotations?: WebMCPToolAnnotations;
+  origin?: string;
+  window?: any;
+  execute?: (input: any, client?: any) => Promise<any>;
   readOnlyHint?: boolean;
   untrustedContentHint?: boolean;
   requiresApproval?: boolean;
-  execute: (input: any) => Promise<any>;
+  [key: string]: any;
+}
+
+export interface WebMCPToolDefinition {
+  name: string;
+  title?: string;
+  description: string;
+  inputSchema: {
+    type: 'object';
+    properties: Record<string, any>;
+    required?: string[];
+    [key: string]: any;
+  };
+  outputSchema?: Record<string, any>;
+  annotations?: WebMCPToolAnnotations;
+  readOnlyHint?: boolean;
+  untrustedContentHint?: boolean;
+  requiresApproval?: boolean;
+  execute: (input: any, client?: any) => Promise<any>;
 }
 
 export interface SystemStatus {

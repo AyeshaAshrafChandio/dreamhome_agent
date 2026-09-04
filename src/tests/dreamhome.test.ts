@@ -159,6 +159,69 @@ describe('WebMCP Tool Layer', () => {
     assert.ok(contactTool, 'contact_seller must be registered');
     assert.strictEqual(contactTool?.requiresApproval, true, 'contact_seller MUST have requiresApproval=true');
   });
+
+  test('registerTool returns a valid RegisteredTool conforming to Chrome WebMCP standard', async () => {
+    const bridge = ensureWebMcpBridge();
+    const customTool = bridge.registerTool({
+      name: 'test_custom_calculator',
+      description: 'Calculates test metrics for WebMCP verification.',
+      readOnlyHint: true,
+      inputSchema: {
+        type: 'object',
+        properties: { value: { type: 'number' } },
+        required: ['value'],
+      },
+      execute: async (input: { value: number }) => {
+        return { doubled: input.value * 2 };
+      },
+    });
+
+    // Verify properties of RegisteredTool
+    assert.strictEqual(customTool.name, 'test_custom_calculator');
+    assert.strictEqual(customTool.annotations?.readOnlyHint, true);
+    assert.strictEqual(Object.prototype.toString.call(customTool), '[object RegisteredTool]');
+
+    // Test execution with RegisteredTool object
+    const execWithToolObj = await bridge.executeTool(customTool, { value: 21 });
+    assert.strictEqual(execWithToolObj.doubled, 42);
+
+    // Test execution with string tool name
+    const execWithToolName = await bridge.executeTool('test_custom_calculator', { value: 50 });
+    assert.strictEqual(execWithToolName.doubled, 100);
+
+    // Test execution with stringified JSON input (standard for Chrome WebMCP and agent callers)
+    const execWithStringifiedInput = await bridge.executeTool(customTool, JSON.stringify({ value: 15 }));
+    assert.strictEqual(execWithStringifiedInput.doubled, 30);
+  });
+
+  test('gracefully intercepts and resolves Chrome native "not of type RegisteredTool" type mismatch', async () => {
+    const { StandardModelContext } = await import('../webmcp/bridge.ts');
+
+    // Simulate Chrome Blink native context whose C++ executeTool throws the exact error if invoked
+    const mockNativeChromeContext = {
+      registerTool: () => {},
+      executeTool: (_tool: any) => {
+        throw new TypeError("Failed to execute 'executeTool' on 'ModelContext': The provided value is not of type 'RegisteredTool'.");
+      },
+    };
+
+    const resilientBridge = new StandardModelContext(mockNativeChromeContext);
+    const registered = resilientBridge.registerTool({
+      name: 'test_resilient_tool',
+      description: 'Tests resilience against native Blink type errors',
+      readOnlyHint: true,
+      inputSchema: { type: 'object', properties: {} },
+      execute: async () => ({ status: 'resilient_success' }),
+    });
+
+    // Even if native Chrome throws "The provided value is not of type 'RegisteredTool'",
+    // our resilient bridge must intercept and execute the tool cleanly!
+    const resultByObj = await resilientBridge.executeTool(registered, {});
+    assert.strictEqual(resultByObj.status, 'resilient_success');
+
+    const resultByName = await resilientBridge.executeTool('test_resilient_tool', {});
+    assert.strictEqual(resultByName.status, 'resilient_success');
+  });
 });
 
 describe('Geographic Distance Calculations', () => {

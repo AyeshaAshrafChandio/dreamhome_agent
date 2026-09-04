@@ -3,10 +3,11 @@
  * Registers all 10 core real estate discovery, analysis, and decision tools
  * on `document.modelContext.registerTool`.
  * Enforces Human-In-The-Loop Approval Gates on consequential actions (contact_seller).
+ * 100% compatible with Chrome's native WebMCP API and agent testing harnesses.
  */
 
 import { ensureWebMcpBridge } from './bridge.ts';
-import { WebMCPToolDefinition, Property, SearchCriteria, AffordabilityInput } from '../types.ts';
+import { SearchCriteria, AffordabilityInput, RegisteredTool } from '../types.ts';
 
 export interface ApprovalPromptRequest {
   toolName: string;
@@ -25,12 +26,24 @@ export function setApprovalHandler(handler: ApprovalHandler) {
   globalApprovalHandler = handler;
 }
 
+function parseInput<T = any>(input: any): T {
+  if (typeof input === 'string') {
+    try {
+      return JSON.parse(input);
+    } catch {
+      return input as any;
+    }
+  }
+  return (input || {}) as T;
+}
+
 export function registerAllWebMcpTools(callbacks?: {
   onToolStart?: (name: string, input: any) => void;
   onToolSuccess?: (name: string, result: any) => void;
   onToolError?: (name: string, error: string) => void;
-}) {
+}): Record<string, RegisteredTool> {
   const modelContext = ensureWebMcpBridge();
+  const registeredMap: Record<string, RegisteredTool> = {};
 
   // Helper to log and notify
   async function callApi(endpoint: string, method: string = 'POST', body?: any) {
@@ -47,10 +60,15 @@ export function registerAllWebMcpTools(callbacks?: {
   }
 
   // 1. search_homes
-  modelContext.registerTool({
+  registeredMap.search_homes = modelContext.registerTool({
     name: 'search_homes',
+    title: 'Search Real Estate Homes',
     description: 'Searches real estate listings matching location, budget, bedrooms, property type, and lifestyle criteria. Returns structured properties with DreamHome Match Scores.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -65,7 +83,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['location'],
     },
-    execute: async (input: SearchCriteria) => {
+    execute: async (rawInput: any) => {
+      const input: SearchCriteria = parseInput(rawInput);
       callbacks?.onToolStart?.('search_homes', input);
       try {
         const result = await callApi('/api/properties/search', 'POST', input);
@@ -76,13 +95,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 2. get_property_details
-  modelContext.registerTool({
+  registeredMap.get_property_details = modelContext.registerTool({
     name: 'get_property_details',
+    title: 'Get Property Details',
     description: 'Retrieves comprehensive specifications, structural details, and amenities for a specific property by ID.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -90,7 +114,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['propertyId'],
     },
-    execute: async (input: { propertyId: string }) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput<{ propertyId: string }>(rawInput);
       callbacks?.onToolStart?.('get_property_details', input);
       try {
         const result = await callApi(`/api/properties/${encodeURIComponent(input.propertyId)}`, 'GET');
@@ -101,13 +126,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 3. compare_properties
-  modelContext.registerTool({
+  registeredMap.compare_properties = modelContext.registerTool({
     name: 'compare_properties',
+    title: 'Compare Properties',
     description: 'Generates a transparent side-by-side comparison across 2 to 4 properties with pros, cons, tradeoffs, and financial analysis.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -119,7 +149,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['propertyIds'],
     },
-    execute: async (input: { propertyIds: string[] }) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput<{ propertyIds: string[] }>(rawInput);
       callbacks?.onToolStart?.('compare_properties', input);
       try {
         const result = await callApi('/api/properties/compare', 'POST', input);
@@ -130,13 +161,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 4. search_neighborhood
-  modelContext.registerTool({
+  registeredMap.search_neighborhood = modelContext.registerTool({
     name: 'search_neighborhood',
+    title: 'Search Neighborhood Amenities',
     description: 'Analyzes the surrounding environment of a location using real OpenStreetMap facilities (schools, hospitals, supermarkets, transit, parks) with deterministic distance calculations.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -145,7 +181,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['location'],
     },
-    execute: async (input: { location: string; radius?: number }) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput<{ location: string; radius?: number }>(rawInput);
       callbacks?.onToolStart?.('search_neighborhood', input);
       try {
         const result = await callApi('/api/neighborhood/search', 'POST', input);
@@ -156,13 +193,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 5. calculate_affordability
-  modelContext.registerTool({
+  registeredMap.calculate_affordability = modelContext.registerTool({
     name: 'calculate_affordability',
+    title: 'Calculate Property Affordability',
     description: 'Computes deterministic mortgage amortization, property taxes, insurance, HOA, and monthly affordability without LLM estimation.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -177,7 +219,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['budget', 'propertyPrice', 'downPayment'],
     },
-    execute: async (input: AffordabilityInput) => {
+    execute: async (rawInput: any) => {
+      const input: AffordabilityInput = parseInput(rawInput);
       callbacks?.onToolStart?.('calculate_affordability', input);
       try {
         const result = await callApi('/api/affordability/calculate', 'POST', input);
@@ -188,13 +231,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 6. save_property
-  modelContext.registerTool({
+  registeredMap.save_property = modelContext.registerTool({
     name: 'save_property',
+    title: 'Save Property to Favorites',
     description: 'Saves a property to the user’s persistent favorites collection in the database.',
     readOnlyHint: false,
+    annotations: {
+      readOnlyHint: false,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -203,7 +251,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['propertyId'],
     },
-    execute: async (input: { propertyId: string; notes?: string }) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput<{ propertyId: string; notes?: string }>(rawInput);
       callbacks?.onToolStart?.('save_property', input);
       try {
         const result = await callApi('/api/saved', 'POST', input);
@@ -214,13 +263,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 7. get_saved_properties
-  modelContext.registerTool({
+  registeredMap.get_saved_properties = modelContext.registerTool({
     name: 'get_saved_properties',
+    title: 'Get Saved Properties',
     description: 'Retrieves all previously saved properties for the current user.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {},
@@ -236,13 +290,18 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 8. create_viewing_request
-  modelContext.registerTool({
+  registeredMap.create_viewing_request = modelContext.registerTool({
     name: 'create_viewing_request',
+    title: 'Schedule Property Viewing',
     description: 'Schedules an in-person property viewing appointment with preferred date and time. Stored in database with pending status.',
     readOnlyHint: false,
+    annotations: {
+      readOnlyHint: false,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -253,7 +312,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['propertyId', 'preferredDate', 'preferredTime'],
     },
-    execute: async (input: any) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput(rawInput);
       callbacks?.onToolStart?.('create_viewing_request', input);
       try {
         const result = await callApi('/api/viewings', 'POST', input);
@@ -264,14 +324,19 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
   // 9. contact_seller (CONSEQUENTIAL ACTION — APPROVAL GATED)
-  modelContext.registerTool({
+  registeredMap.contact_seller = modelContext.registerTool({
     name: 'contact_seller',
+    title: 'Contact Listing Broker / Seller',
     description: 'Drafts and transmits an inquiry to a property seller or listing broker. CRITICAL: Consequential action strictly gated by human-in-the-loop approval.',
     readOnlyHint: false,
     requiresApproval: true,
+    annotations: {
+      readOnlyHint: false,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {
@@ -280,7 +345,8 @@ export function registerAllWebMcpTools(callbacks?: {
       },
       required: ['propertyId'],
     },
-    execute: async (input: { propertyId: string; message?: string }) => {
+    execute: async (rawInput: any) => {
+      const input = parseInput<{ propertyId: string; message?: string }>(rawInput);
       callbacks?.onToolStart?.('contact_seller', input);
 
       // Step 1: Create Draft on server
@@ -290,7 +356,6 @@ export function registerAllWebMcpTools(callbacks?: {
       // Step 2: Trigger Human-in-the-Loop Approval Gate
       return new Promise((resolve, reject) => {
         if (!globalApprovalHandler) {
-          // If no UI handler registered, do not send!
           const msg = 'Approval Gate: No approval handler configured. Message held in draft state.';
           callbacks?.onToolError?.('contact_seller', msg);
           return reject(new Error(msg));
@@ -335,13 +400,18 @@ export function registerAllWebMcpTools(callbacks?: {
         });
       });
     },
-  });
+  }) as RegisteredTool;
 
   // 10. get_user_preferences
-  modelContext.registerTool({
+  registeredMap.get_user_preferences = modelContext.registerTool({
     name: 'get_user_preferences',
+    title: 'Get User Preferences',
     description: 'Retrieves current buyer profile preferences and defaults.',
     readOnlyHint: true,
+    annotations: {
+      readOnlyHint: true,
+      untrustedContentHint: false,
+    },
     inputSchema: {
       type: 'object',
       properties: {},
@@ -357,7 +427,7 @@ export function registerAllWebMcpTools(callbacks?: {
         throw err;
       }
     },
-  });
+  }) as RegisteredTool;
 
-  return modelContext;
+  return registeredMap;
 }

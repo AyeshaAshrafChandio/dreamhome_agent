@@ -1,6 +1,7 @@
-import React from 'react';
-import { Bed, Bath, Square, MapPin, Heart, GitCompare, MessageSquare, Calendar, ChevronRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { Bed, Bath, Square, MapPin, Heart, GitCompare, ChevronRight, ChevronLeft, CheckCircle2, AlertCircle, Camera } from 'lucide-react';
 import { Property } from '../types.ts';
+import { getRealPropertyPhotoUrls } from '../lib/propertyPhotos.ts';
 
 interface PropertyCardProps {
   property: Property;
@@ -26,23 +27,37 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
   onScheduleViewing,
 }) => {
   const matchScore = property.matchScore?.overall || 85;
+  const [activePhotoIdx, setActivePhotoIdx] = useState(0);
 
-  // Fallback architectural / house illustration if photos empty
-  const photoUrl =
+  // Use property photos or deterministically matched authentic architectural photos
+  const photos =
     property.photos && property.photos.length > 0
-      ? property.photos[0]
-      : `https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80`;
+      ? property.photos
+      : getRealPropertyPhotoUrls(property);
+
+  const currentPhoto = photos[activePhotoIdx] || photos[0];
+
+  const handlePrevPhoto = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setActivePhotoIdx((prev) => (prev > 0 ? prev - 1 : photos.length - 1));
+  };
+
+  const handleNextPhoto = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setActivePhotoIdx((prev) => (prev < photos.length - 1 ? prev + 1 : 0));
+  };
 
   return (
     <div
       id={`property-card-${property.id}`}
-      className="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col shadow-xs hover:shadow-md transition-all duration-200 group relative"
+      className="bg-white rounded-xl border border-slate-200 overflow-hidden flex flex-col shadow-xs hover:shadow-md transition-all duration-200 group relative cursor-pointer"
+      onClick={() => onSelectDetails(property)}
     >
-      {/* Property Image & Clean Minimalism Overlay Badges */}
-      <div className="relative aspect-16/10 overflow-hidden bg-slate-100 shrink-0">
+      {/* Property Image Carousel & Badges */}
+      <div className="relative aspect-16/10 overflow-hidden bg-slate-100 shrink-0 select-none">
         <img
-          src={photoUrl}
-          alt={property.title}
+          src={currentPhoto}
+          alt={`${property.title} - View ${activePhotoIdx + 1}`}
           referrerPolicy="no-referrer"
           className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500"
           onError={(e) => {
@@ -56,10 +71,47 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
           {matchScore}% MATCH
         </div>
 
-        {/* Index counter badge */}
-        <div className="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-xs text-white text-[10px] font-mono px-2 py-0.5 rounded">
-          #{index + 1}
+        {/* Photo counter badge */}
+        <div className="absolute top-3 right-3 bg-slate-900/80 backdrop-blur-xs text-white text-[10px] font-mono px-2 py-0.5 rounded flex items-center space-x-1 z-10">
+          <Camera className="w-3 h-3 text-slate-300" />
+          <span>{activePhotoIdx + 1}/{photos.length}</span>
         </div>
+
+        {/* Carousel Navigation Arrows */}
+        {photos.length > 1 && (
+          <>
+            <button
+              onClick={handlePrevPhoto}
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10 cursor-pointer shadow-sm"
+              title="Previous photo"
+              aria-label="Previous photo"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={handleNextPhoto}
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity z-10 cursor-pointer shadow-sm"
+              title="Next photo"
+              aria-label="Next photo"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </>
+        )}
+
+        {/* Dot Indicators */}
+        {photos.length > 1 && (
+          <div className="absolute bottom-3 left-3 flex items-center gap-1 z-10">
+            {photos.slice(0, 5).map((_, i) => (
+              <span
+                key={i}
+                className={`h-1.5 rounded-full transition-all ${
+                  i === activePhotoIdx ? 'w-4 bg-white shadow-sm' : 'w-1.5 bg-white/60'
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
         {/* Quick Save & Compare buttons with accessible touch targets */}
         <div className="absolute bottom-3 right-3 flex items-center gap-1.5 z-10">

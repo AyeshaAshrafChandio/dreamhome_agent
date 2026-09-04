@@ -8,6 +8,7 @@
  */
 
 import { Property, SearchCriteria } from '../../types.ts';
+import { getRealPropertyPhotoUrls } from '../../lib/propertyPhotos.ts';
 
 export interface PropertySearchResult {
   properties: Property[];
@@ -64,35 +65,6 @@ function parseStateCode(val: string): string {
   if (trimmed.length === 2) return trimmed.toUpperCase();
   return US_STATES[trimmed] || trimmed.toUpperCase();
 }
-
-// Architectural high-resolution real home photography fallbacks by property type
-const ARCHITECTURAL_PHOTOS: Record<string, string[]> = {
-  single_family: [
-    'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80',
-  ],
-  condo: [
-    'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
-  ],
-  townhouse: [
-    'https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1200&q=80',
-  ],
-  apartment: [
-    'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=80',
-  ],
-  villa: [
-    'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80',
-  ],
-  duplex: [
-    'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1200&q=80',
-    'https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1200&q=80',
-  ],
-};
 
 /**
  * Adapter 1: Official RentCast API (https://rentcast.io)
@@ -180,8 +152,18 @@ export class RentCastPropertyProvider implements PropertyProvider {
 
       const properties: Property[] = rawListings.map((item: any) => {
         const pType = this.mapPropertyType(item.propertyType);
-        const fallbackPhotos = ARCHITECTURAL_PHOTOS[pType] || ARCHITECTURAL_PHOTOS.single_family;
-        const photos = Array.isArray(item.photos) && item.photos.length > 0 ? item.photos : fallbackPhotos;
+        const photos = Array.isArray(item.photos) && item.photos.length > 0
+          ? item.photos
+          : getRealPropertyPhotoUrls({
+              id: item.id,
+              title: item.formattedAddress,
+              propertyType: pType,
+              price: Number(item.price) || 0,
+              bedrooms: Number(item.bedrooms) || 3,
+              bathrooms: Number(item.bathrooms) || 2,
+              features: Array.isArray(item.features) ? item.features : [],
+              location: { address: item.addressLine1 || item.formattedAddress },
+            });
 
         const sellerName = item.listingAgent?.name || item.contactName || item.agentName || 'Licensed Listing Broker';
         const sellerPhone = item.listingAgent?.phone || item.contactPhone;
@@ -266,8 +248,18 @@ export class RentCastPropertyProvider implements PropertyProvider {
       if (!response.ok) return null;
       const item = await response.json();
       const pType = this.mapPropertyType(item.propertyType);
-      const fallbackPhotos = ARCHITECTURAL_PHOTOS[pType] || ARCHITECTURAL_PHOTOS.single_family;
-      const photos = Array.isArray(item.photos) && item.photos.length > 0 ? item.photos : fallbackPhotos;
+      const photos = Array.isArray(item.photos) && item.photos.length > 0
+        ? item.photos
+        : getRealPropertyPhotoUrls({
+            id: item.id || id,
+            title: item.formattedAddress,
+            propertyType: pType,
+            price: Number(item.price) || 0,
+            bedrooms: Number(item.bedrooms) || 3,
+            bathrooms: Number(item.bathrooms) || 2,
+            features: Array.isArray(item.features) ? item.features : [],
+            location: { address: item.addressLine1 || item.formattedAddress },
+          });
 
       return {
         id: item.id || id,

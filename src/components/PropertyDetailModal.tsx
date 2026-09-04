@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import { X, Bed, Bath, Square, MapPin, CheckCircle2, AlertCircle, Heart, Calendar, MessageSquare, Calculator, Compass, School, Bus, ShoppingCart, Trees, Stethoscope } from 'lucide-react';
+import {
+  X, Bed, Bath, Square, MapPin, CheckCircle2, AlertCircle, Heart, Calendar, MessageSquare,
+  Compass, ChevronLeft, ChevronRight, Maximize2, Camera, Home, Calculator, School, Bus,
+  ShoppingCart, Trees, Stethoscope
+} from 'lucide-react';
 import { Property, AffordabilityResult } from '../types.ts';
 import { calculateAffordability } from '../lib/affordability.ts';
+import { getRealPropertyPhotoDetails } from '../lib/propertyPhotos.ts';
 
 interface PropertyDetailModalProps {
   property: Property | null;
@@ -22,6 +27,23 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
 }) => {
   if (!property) return null;
 
+  const [activePhotoIdx, setActivePhotoIdx] = useState<number>(0);
+  const [isLightboxOpen, setIsLightboxOpen] = useState<boolean>(false);
+
+  // Retrieve authentic real property photos with room categorization
+  const photoList = getRealPropertyPhotoDetails(property);
+  const activePhoto = photoList[activePhotoIdx] || photoList[0];
+
+  const handlePrevPhoto = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setActivePhotoIdx((prev) => (prev > 0 ? prev - 1 : photoList.length - 1));
+  };
+
+  const handleNextPhoto = (e?: React.MouseEvent) => {
+    e?.stopPropagation();
+    setActivePhotoIdx((prev) => (prev < photoList.length - 1 ? prev + 1 : 0));
+  };
+
   // Local state for affordability parameters
   const [downPayment, setDownPayment] = useState<number>(Math.round(property.price * 0.2));
   const [interestRate, setInterestRate] = useState<number>(6.5);
@@ -41,6 +63,64 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-slate-900/60 backdrop-blur-xs overflow-y-auto">
+      {/* Lightbox / Fullscreen Image Modal */}
+      {isLightboxOpen && (
+        <div
+          className="fixed inset-0 z-60 bg-black/95 flex flex-col items-center justify-between p-4"
+          onClick={() => setIsLightboxOpen(false)}
+        >
+          <div className="w-full flex items-center justify-between text-white py-2 px-4 max-w-6xl">
+            <div className="flex items-center space-x-2">
+              <span className="px-2 py-0.5 bg-white/20 rounded text-xs uppercase font-mono tracking-wider">
+                {activePhoto.category}
+              </span>
+              <span className="text-sm font-medium text-slate-200">{activePhoto.caption}</span>
+            </div>
+            <button
+              onClick={() => setIsLightboxOpen(false)}
+              className="p-2 rounded-full bg-white/10 hover:bg-white/25 text-white cursor-pointer"
+              title="Close fullscreen"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+
+          <div
+            className="relative max-w-6xl w-full flex-1 flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={activePhoto.url}
+              alt={activePhoto.caption}
+              referrerPolicy="no-referrer"
+              className="max-h-[82vh] max-w-full object-contain rounded-lg shadow-2xl"
+            />
+            {photoList.length > 1 && (
+              <>
+                <button
+                  onClick={handlePrevPhoto}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/60 hover:bg-black/80 text-white cursor-pointer"
+                  title="Previous image"
+                >
+                  <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button
+                  onClick={handleNextPhoto}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-black/60 hover:bg-black/80 text-white cursor-pointer"
+                  title="Next image"
+                >
+                  <ChevronRight className="w-6 h-6" />
+                </button>
+              </>
+            )}
+          </div>
+
+          <div className="py-2 text-slate-400 text-xs font-mono">
+            {activePhotoIdx + 1} of {photoList.length} • Click anywhere outside image or press ESC to exit
+          </div>
+        </div>
+      )}
+
       <div className="bg-white rounded-xl max-w-4xl w-full shadow-2xl border border-slate-200 overflow-hidden my-auto max-h-[94vh] flex flex-col">
         {/* Modal Header */}
         <div className="px-4 py-3 sm:px-6 sm:py-4 border-b border-slate-200 flex items-center justify-between bg-slate-50 shrink-0">
@@ -78,6 +158,94 @@ export const PropertyDetailModal: React.FC<PropertyDetailModalProps> = ({
               <div className="text-xs text-slate-500">
                 Est. ${(property.price / (property.areaSqFt || 1)).toFixed(0)}/sqft
               </div>
+            </div>
+          </div>
+
+          {/* Authentic Real Property Photo Gallery */}
+          <div className="space-y-2.5">
+            {/* Primary Hero Photo Frame */}
+            <div className="relative aspect-16/10 sm:aspect-16/9 w-full rounded-xl overflow-hidden bg-slate-900 shadow-sm border border-slate-200 group select-none">
+              <img
+                src={activePhoto.url}
+                alt={activePhoto.caption}
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover transition-all duration-300 group-hover:scale-101"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src =
+                    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80';
+                }}
+              />
+
+              {/* Room Caption Badge */}
+              <div className="absolute top-3 left-3 flex items-center space-x-2 z-10">
+                <span className="px-2.5 py-1 bg-slate-900/80 backdrop-blur-xs text-white text-xs font-semibold rounded-md shadow-xs flex items-center space-x-1.5">
+                  <Home className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>{activePhoto.caption}</span>
+                </span>
+              </div>
+
+              {/* Photo Count and Fullscreen buttons */}
+              <div className="absolute top-3 right-3 flex items-center space-x-1.5 z-10">
+                <span className="px-2 py-1 bg-slate-900/80 backdrop-blur-xs text-white text-xs font-mono rounded-md flex items-center space-x-1">
+                  <Camera className="w-3 h-3 text-slate-300" />
+                  <span>{activePhotoIdx + 1} / {photoList.length}</span>
+                </span>
+                <button
+                  onClick={() => setIsLightboxOpen(true)}
+                  className="p-1.5 bg-slate-900/80 hover:bg-slate-900 text-white rounded-md backdrop-blur-xs transition-colors cursor-pointer"
+                  title="View fullscreen"
+                  aria-label="View fullscreen"
+                >
+                  <Maximize2 className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* Carousel Navigation Arrows */}
+              {photoList.length > 1 && (
+                <>
+                  <button
+                    onClick={handlePrevPhoto}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/75 hover:bg-slate-900 text-white flex items-center justify-center transition-all cursor-pointer shadow-md"
+                    title="Previous room photo"
+                    aria-label="Previous room photo"
+                  >
+                    <ChevronLeft className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={handleNextPhoto}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-slate-900/75 hover:bg-slate-900 text-white flex items-center justify-center transition-all cursor-pointer shadow-md"
+                    title="Next room photo"
+                    aria-label="Next room photo"
+                  >
+                    <ChevronRight className="w-5 h-5" />
+                  </button>
+                </>
+              )}
+            </div>
+
+            {/* Room Thumbnails Filmstrip Strip */}
+            <div className="flex items-center space-x-2 overflow-x-auto pb-1 pt-0.5 no-scrollbar">
+              {photoList.map((p, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActivePhotoIdx(idx)}
+                  className={`relative flex-shrink-0 w-20 sm:w-24 aspect-16/10 rounded-lg overflow-hidden border-2 transition-all cursor-pointer ${
+                    idx === activePhotoIdx
+                      ? 'border-slate-900 ring-2 ring-slate-900/30 shadow-xs scale-102'
+                      : 'border-slate-200 opacity-70 hover:opacity-100'
+                  }`}
+                >
+                  <img
+                    src={p.url}
+                    alt={p.caption}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover"
+                  />
+                  <span className="absolute bottom-0 inset-x-0 bg-slate-900/80 text-white text-[9px] font-medium text-center py-0.5 truncate px-1">
+                    {p.category.charAt(0).toUpperCase() + p.category.slice(1)}
+                  </span>
+                </button>
+              ))}
             </div>
           </div>
 

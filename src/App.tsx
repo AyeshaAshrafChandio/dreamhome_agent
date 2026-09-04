@@ -110,7 +110,8 @@ export function App() {
     try {
       const bridge = ensureWebMcpBridge();
       // Invoke through WebMCP tool directly
-      const result = await bridge.executeTool('search_homes', searchCriteria);
+      const tool = bridge.getTool('search_homes');
+      const result = await bridge.executeTool(tool || 'search_homes', searchCriteria);
       setProperties(result.properties || []);
       setCriteria(searchCriteria);
 
@@ -183,7 +184,8 @@ export function App() {
       } else if (intent.toolToExecute === 'save_property') {
         const propId = intent.targetPropertyId || properties[0]?.id;
         if (propId) {
-          await bridge.executeTool('save_property', { propertyId: propId });
+          const tool = bridge.getTool('save_property');
+          await bridge.executeTool(tool || 'save_property', { propertyId: propId });
           await loadSavedProperties();
           setStatusNotification({
             type: 'success',
@@ -199,7 +201,8 @@ export function App() {
             message: 'Consequential action paused: Human approval required before contacting seller.',
           });
           // This invokes the tool, which stops and opens the ApprovalGateModal via globalApprovalHandler!
-          bridge.executeTool('contact_seller', {
+          const tool = bridge.getTool('contact_seller');
+          bridge.executeTool(tool || 'contact_seller', {
             propertyId: propId,
             message: intent.approvalPayload?.draftMessage,
           }).then((res: any) => {
@@ -216,7 +219,8 @@ export function App() {
       } else if (intent.toolToExecute === 'create_viewing_request') {
         const propId = intent.targetPropertyId || properties[0]?.id;
         if (propId) {
-          await bridge.executeTool('create_viewing_request', intent.toolInput);
+          const tool = bridge.getTool('create_viewing_request');
+          await bridge.executeTool(tool || 'create_viewing_request', intent.toolInput);
           setStatusNotification({
             type: 'success',
             message: 'Tour scheduled successfully (Status: Pending seller confirmation).',
@@ -227,7 +231,8 @@ export function App() {
         if (targetProp) {
           setSelectedProperty(targetProp);
         }
-        const calcResult = await bridge.executeTool('calculate_affordability', intent.toolInput || {
+        const tool = bridge.getTool('calculate_affordability');
+        const calcResult = await bridge.executeTool(tool || 'calculate_affordability', intent.toolInput || {
           budget: 4500,
           propertyPrice: targetProp?.price || 650000,
           downPayment: Math.round((targetProp?.price || 650000) * 0.2),
@@ -263,7 +268,8 @@ export function App() {
       setStatusNotification({ type: 'info', message: 'Removed property from saved collection.' });
     } else {
       const bridge = ensureWebMcpBridge();
-      await bridge.executeTool('save_property', { propertyId: property.id });
+      const tool = bridge.getTool('save_property');
+      await bridge.executeTool(tool || 'save_property', { propertyId: property.id });
       await loadSavedProperties();
       setStatusNotification({ type: 'success', message: 'Saved property to your collection.' });
     }
@@ -287,7 +293,8 @@ export function App() {
 
   const handleDirectContactSeller = (property: Property) => {
     const bridge = ensureWebMcpBridge();
-    bridge.executeTool('contact_seller', {
+    const tool = bridge.getTool('contact_seller');
+    bridge.executeTool(tool || 'contact_seller', {
       propertyId: property.id,
       message: `Hello, I am interested in ${property.title}. Could you please share more information regarding availability and utility costs?`,
     }).then((res: any) => {
@@ -303,7 +310,8 @@ export function App() {
   const handleDirectScheduleViewing = (property: Property) => {
     const date = new Date(Date.now() + 86400000 * 2).toISOString().split('T')[0];
     const bridge = ensureWebMcpBridge();
-    bridge.executeTool('create_viewing_request', {
+    const tool = bridge.getTool('create_viewing_request');
+    bridge.executeTool(tool || 'create_viewing_request', {
       propertyId: property.id,
       preferredDate: date,
       preferredTime: '14:00',
